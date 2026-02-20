@@ -1,153 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jan Zellerhoff</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
-            background: #fafafa;
-            color: #1a1a1a;
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 40px 20px;
-            line-height: 1.6;
-        }
-        .container {
-            max-width: 480px;
-            width: 100%;
-        }
-        h1 {
-            font-size: 2.5rem;
-            font-weight: 300;
-            letter-spacing: -0.02em;
-            margin-bottom: 8px;
-            color: #1a1a1a;
-        }
-        .subtitle {
-            font-size: 1rem;
-            color: #666;
-            font-weight: 400;
-            margin-bottom: 60px;
-        }
-        .language-section {
-            margin-bottom: 48px;
-        }
-        .language-section:last-child {
-            margin-bottom: 0;
-        }
-        .lang-header {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            margin-bottom: 16px;
-        }
-        .lang-icon {
-            width: 24px;
-            height: 24px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 18px;
-        }
-        .lang-name {
-            font-size: 0.875rem;
-            color: #999;
-            font-weight: 500;
-            letter-spacing: 0.05em;
-            text-transform: uppercase;
-        }
-        .links {
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-        }
-        .links a {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 16px 0;
-            color: #1a1a1a;
-            text-decoration: none;
-            font-size: 1rem;
-            font-weight: 400;
-            border-bottom: 1px solid #e5e5e5;
-            transition: all 0.2s ease;
-        }
-        .links a:hover {
-            color: #0066ff;
-            padding-left: 8px;
-        }
-        .links a:hover .arrow {
-            opacity: 1;
-            transform: translateX(4px);
-        }
-        .arrow {
-            opacity: 0;
-            transition: all 0.2s ease;
-            color: #0066ff;
-            font-size: 1.2rem;
-        }
-        .divider {
-            height: 1px;
-            background: #e5e5e5;
-            margin: 48px 0;
-        }
-        @media (max-width: 480px) {
-            h1 {
-                font-size: 2rem;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jan Zellerhoff — Legal</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      background: #fafafa;
+      color: #1a1a1a;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+      line-height: 1.6;
+    }
+    .container { max-width: 480px; width: 100%; }
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 300;
+      letter-spacing: -0.02em;
+      margin-bottom: 8px;
+      color: #1a1a1a;
+    }
+    .subtitle {
+      font-size: 1rem;
+      color: #666;
+      font-weight: 400;
+      margin-bottom: 60px;
+    }
+    .app-section { margin-bottom: 48px; }
+    .app-name {
+      font-size: 0.875rem;
+      color: #999;
+      font-weight: 500;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+    .links a {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 0;
+      color: #1a1a1a;
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: 400;
+      border-bottom: 1px solid #e5e5e5;
+      transition: all 0.2s ease;
+    }
+    .links a:hover {
+      color: #0066ff;
+      padding-left: 8px;
+    }
+    .links a:hover .arrow {
+      opacity: 1;
+      transform: translateX(4px);
+    }
+    .arrow {
+      opacity: 0;
+      transition: all 0.2s ease;
+      color: #0066ff;
+      font-size: 1.2rem;
+    }
+    .divider {
+      height: 1px;
+      background: #e5e5e5;
+      margin: 48px 0;
+    }
+    @media (max-width: 480px) {
+      h1 { font-size: 2rem; }
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Jan Zellerhoff</h1>
-        <p class="subtitle">iOS App Developer</p>
-        
-        <div class="language-section">
-            <div class="lang-header">
-                <span class="lang-icon">🇬🇧</span>
-                <span class="lang-name">English</span>
-            </div>
-            <div class="links">
-                <a href="imprint.html">
-                    Imprint
-                    <span class="arrow">→</span>
-                </a>
-                <a href="privacy.html">
-                    Privacy Policy
-                    <span class="arrow">→</span>
-                </a>
-            </div>
-        </div>
-        
-        <div class="divider"></div>
-        
-        <div class="language-section">
-            <div class="lang-header">
-                <span class="lang-icon">🇩🇪</span>
-                <span class="lang-name">Deutsch</span>
-            </div>
-            <div class="links">
-                <a href="impressum.html">
-                    Impressum
-                    <span class="arrow">→</span>
-                </a>
-                <a href="datenschutz.html">
-                    Datenschutz
-                    <span class="arrow">→</span>
-                </a>
-            </div>
-        </div>
+  <div class="container">
+    <h1>Jan Zellerhoff</h1>
+    <p class="subtitle">iOS App Developer</p>
+
+    <div class="app-section">
+      <div class="app-name">shin.</div>
+      <div class="links">
+        <a href="/shin/privacy.html">
+          Privacy Policy
+          <span class="arrow">&rarr;</span>
+        </a>
+        <a href="/shin/impressum.html">
+          Impressum
+          <span class="arrow">&rarr;</span>
+        </a>
+      </div>
     </div>
+
+    <div class="divider"></div>
+
+    <div class="app-section">
+      <div class="app-name">Kept</div>
+      <div class="links">
+        <a href="/kept/privacy-en.html">
+          Privacy Policy
+          <span class="arrow">&rarr;</span>
+        </a>
+        <a href="/kept/privacy-de.html">
+          Datenschutzerkl&auml;rung
+          <span class="arrow">&rarr;</span>
+        </a>
+        <a href="/kept/impressum-en.html">
+          Impressum (EN)
+          <span class="arrow">&rarr;</span>
+        </a>
+        <a href="/kept/impressum-de.html">
+          Impressum (DE)
+          <span class="arrow">&rarr;</span>
+        </a>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
