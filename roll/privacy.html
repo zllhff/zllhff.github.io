@@ -42,12 +42,21 @@
     .lang { font-size: 13px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px; }
     ul { padding-left: 20px; }
     li { margin-bottom: 6px; }
+    .lang-switcher { display: flex; gap: 14px; font-size: 13px; color: var(--muted); margin-bottom: 24px; }
+    .lang-switcher a { color: var(--sienna); text-decoration: none; }
+    .lang-switcher .active { color: var(--muted); cursor: default; }
   </style>
 </head>
 <body>
+  <nav class="lang-switcher" aria-label="Language">
+    <span class="active">EN</span>
+    <a href="privacy-de.html" hreflang="de">DE</a>
+    <a href="privacy-es.html" hreflang="es">ES</a>
+    <a href="privacy-fr.html" hreflang="fr">FR</a>
+  </nav>
   <span class="pill">Roll · Privacy Policy</span>
   <h1>Privacy Policy</h1>
-  <p class="meta">Last updated: 2026-05-20 · Effective immediately.</p>
+  <p class="meta">Last updated: 2026-05-22 · Effective immediately.</p>
 
   <p><strong>Roll runs entirely on your iPhone.</strong> It makes zero network calls. We don't
   collect, send, store, or have access to your photos or any data about you.</p>
@@ -74,6 +83,11 @@
   <em>Limited Access</em> is the recommended choice — Roll only ever sees photos you've explicitly
   picked. You can change this anytime in <em>iPhone Settings → Roll → Photos</em>.</p>
 
+  <h2>In-App Purchases</h2>
+  <p>Roll offers two purchase options: a one-time Lifetime purchase and a weekly subscription.
+  Both are handled entirely by Apple's StoreKit — we receive no billing or identity data. The
+  subscription auto-renews until cancelled in iPhone Settings → Apple ID → Subscriptions.</p>
+
   <h2>Children</h2>
   <p>Roll does not target children and does not collect any data — including children's data.</p>
 
@@ -96,16 +110,5 @@
 
   <h2>Contact</h2>
   <p>Privacy questions: <a href="mailto:hello@roll.app">hello@roll.app</a></p>
-
-  <div class="divider"></div>
-  <p class="lang">Deutsch</p>
-  <h1>Datenschutz</h1>
-  <p class="meta">Stand: 2026-05-20</p>
-  <p><strong>Roll läuft vollständig auf deinem iPhone.</strong> Es werden keine Daten an einen
-  Server gesendet. Wir sammeln, übertragen, speichern oder haben keinerlei Zugriff auf deine
-  Fotos oder andere Daten über dich.</p>
-  <p>Verifizieren kannst du das jederzeit: aktiviere den Flugmodus — Roll funktioniert
-  unverändert weiter.</p>
-  <p>Fragen: <a href="mailto:hello@roll.app">hello@roll.app</a></p>
 </body>
 </html>

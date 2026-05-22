@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Roll — Politique de confidentialité</title>
+  <style>
+    :root {
+      --sienna: #C6502D;
+      --bg: #FAF7F2;
+      --fg: #1F1B17;
+      --muted: #6B6359;
+      --border: #E6DFD3;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", system-ui, sans-serif;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 32px 24px 64px;
+      background: var(--bg);
+      color: var(--fg);
+      line-height: 1.55;
+    }
+    h1 { font-size: 32px; letter-spacing: -0.3px; margin: 0 0 8px; }
+    h2 { font-size: 22px; margin: 32px 0 8px; letter-spacing: -0.1px; }
+    h3 { font-size: 17px; margin: 20px 0 6px; }
+    p, li { font-size: 16px; color: var(--fg); }
+    a { color: var(--sienna); }
+    .meta { color: var(--muted); font-size: 14px; margin-bottom: 32px; }
+    .pill {
+      display: inline-block; padding: 4px 10px; border-radius: 999px;
+      background: var(--sienna); color: white; font-size: 12px; font-weight: 600;
+      letter-spacing: 0.4px; text-transform: uppercase; margin-bottom: 16px;
+    }
+    .divider { height: 1px; background: var(--border); margin: 48px 0; }
+    .lang { font-size: 13px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px; }
+    ul { padding-left: 20px; }
+    li { margin-bottom: 6px; }
+    .lang-switcher { display: flex; gap: 14px; font-size: 13px; color: var(--muted); margin-bottom: 24px; }
+    .lang-switcher a { color: var(--sienna); text-decoration: none; }
+    .lang-switcher .active { color: var(--muted); cursor: default; }
+  </style>
+</head>
+<body>
+  <nav class="lang-switcher" aria-label="Langue">
+    <a href="privacy.html" hreflang="en">EN</a>
+    <a href="privacy-de.html" hreflang="de">DE</a>
+    <a href="privacy-es.html" hreflang="es">ES</a>
+    <span class="active">FR</span>
+  </nav>
+  <span class="pill">Roll · Politique de confidentialité</span>
+  <h1>Politique de confidentialité</h1>
+  <p class="meta">Dernière mise à jour : 2026-05-22 · Applicable immédiatement.</p>
+
+  <p><strong>Roll fonctionne entièrement sur votre iPhone.</strong> Aucun appel réseau n'est
+  effectué. Nous ne collectons, n'envoyons, ne stockons ni n'avons accès à vos photos ou à
+  toute donnée vous concernant.</p>
+
+  <h2>Quelles données nous collectons</h2>
+  <p><strong>Aucune.</strong> Roll n'a pas de serveurs, ni d'analytics, ni de rapports de crash,
+  ni d'identifiants publicitaires, ni de télémétrie d'usage. Il n'y a pas de compte Roll parce
+  que Roll n'a pas la notion d'« utilisateur ».</p>
+
+  <h2>Quelles données nous envoyons à des tiers</h2>
+  <p><strong>Aucune.</strong> Le seul signal qui quitte votre appareil est le résumé anonyme de
+  MetricKit qu'Apple agrège pour chaque app iOS — nous ne le recevons jamais.</p>
+
+  <h2>Ce qui reste sur votre appareil</h2>
+  <ul>
+    <li>Un index de caractéristiques visuelles calculé localement avec le framework Vision
+    d'Apple (netteté, visages, embeddings). Jamais la photo elle-même, jamais les vignettes.</li>
+    <li>Votre historique d'actions (quels sets vous avez révisés, gardés ou écartés). Alimente
+    le journal « Récemment écartées ».</li>
+    <li>Journal d'activité — agrégats par session consultables dans <em>Réglages →
+    Confidentialité et données → Journal d'activité</em>. Uniquement des totaux, jamais
+    transmis hors de l'appareil.</li>
+    <li>Vos réglages (Keep-N par défaut, thème, etc.) dans le stockage standard iOS.</li>
+  </ul>
+  <p>Tout ce qui précède peut être effacé à tout moment via <em>Réglages → Réinitialiser
+  Roll</em>.</p>
+
+  <h2>Accès à la photothèque</h2>
+  <p>Roll utilise <strong>PhotoKit</strong> d'Apple avec les autorisations que vous accordez au
+  premier lancement. L'<em>accès limité</em> est l'option recommandée — Roll ne verra que les
+  photos que vous sélectionnez explicitement. Vous pouvez le modifier à tout moment dans
+  <em>Réglages iPhone → Roll → Photos</em>.</p>
+
+  <h2>Achats intégrés</h2>
+  <p>Roll propose deux options d'achat : un achat unique Lifetime et un abonnement
+  hebdomadaire. Les deux sont entièrement gérés par StoreKit d'Apple — nous ne recevons aucune
+  donnée de paiement ni d'identité. L'abonnement se renouvelle automatiquement jusqu'à sa
+  résiliation dans Réglages iPhone → Identifiant Apple → Abonnements.</p>
+
+  <h2>Enfants</h2>
+  <p>Roll ne cible pas les enfants et ne collecte aucune donnée — y compris les données
+  d'enfants.</p>
+
+  <h2>Comment vérifier</h2>
+  <p>Activez le Mode Avion et utilisez Roll normalement. Toutes les fonctions marchent. C'est
+  la preuve la plus simple et la plus fiable que Roll ne communique jamais via le réseau.</p>
+
+  <h2>RGPD (UE)</h2>
+  <p>Roll ne traite pas de données personnelles parce qu'il n'en reçoit jamais. Vous disposez
+  par définition de tous les droits RGPD (accès, suppression, portabilité) — les données
+  vivent sur votre appareil et vous en avez le contrôle direct.</p>
+
+  <h2>Modifications de cette politique</h2>
+  <p>Si Roll change un jour ce qu'il collecte ou transmet, cette politique sera mise à jour et
+  une notification apparaîtra dans l'app avant que le changement entre en vigueur.</p>
+
+  <h2>Contact</h2>
+  <p>Questions sur la confidentialité :
+  <a href="mailto:hello@roll.app">hello@roll.app</a></p>
+</body>
+</html>
