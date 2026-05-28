@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jan Zellerhoff — Legal</title>
+  <title>Jan Zellerhoff — iOS Apps</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
@@ -17,7 +17,7 @@
       padding: 40px 20px;
       line-height: 1.6;
     }
-    .container { max-width: 480px; width: 100%; }
+    .container { max-width: 560px; width: 100%; }
     h1 {
       font-size: 2.5rem;
       font-weight: 300;
@@ -29,55 +29,60 @@
       font-size: 1rem;
       color: #666;
       font-weight: 400;
-      margin-bottom: 60px;
+      margin-bottom: 64px;
     }
-    .app-section { margin-bottom: 48px; }
-    .app-name {
-      font-size: 0.875rem;
-      color: #999;
-      font-weight: 500;
-      letter-spacing: 0.05em;
-      text-transform: uppercase;
-      margin-bottom: 16px;
-    }
-    .links {
+    .apps {
       display: flex;
       flex-direction: column;
-      gap: 0;
+      gap: 4px;
     }
-    .links a {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 16px 0;
-      color: #1a1a1a;
-      text-decoration: none;
-      font-size: 1rem;
-      font-weight: 400;
+    .app-card {
+      display: block;
+      padding: 24px 0;
       border-bottom: 1px solid #e5e5e5;
-      transition: all 0.2s ease;
+      text-decoration: none;
+      color: inherit;
+      transition: padding 0.2s ease, color 0.2s ease;
     }
-    .links a:hover {
-      color: #0066ff;
-      padding-left: 8px;
+    .app-card:last-child { border-bottom: none; }
+    .app-card:hover { padding-left: 8px; }
+    .app-card-row {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 16px;
     }
-    .links a:hover .arrow {
-      opacity: 1;
-      transform: translateX(4px);
+    .app-name {
+      font-size: 1.5rem;
+      font-weight: 500;
+      letter-spacing: -0.01em;
+      color: #1a1a1a;
+    }
+    .app-tagline {
+      font-size: 0.95rem;
+      color: #666;
+      margin-top: 4px;
+      font-weight: 400;
     }
     .arrow {
-      opacity: 0;
-      transition: all 0.2s ease;
-      color: #0066ff;
+      color: #999;
       font-size: 1.2rem;
+      flex-shrink: 0;
+      transition: color 0.2s ease, transform 0.2s ease;
     }
-    .divider {
-      height: 1px;
-      background: #e5e5e5;
-      margin: 48px 0;
+    .app-card:hover .arrow {
+      color: #0066ff;
+      transform: translateX(4px);
     }
+    footer {
+      margin-top: 80px;
+      font-size: 0.8rem;
+      color: #999;
+    }
+    footer a { color: #999; text-decoration: underline; }
     @media (max-width: 480px) {
       h1 { font-size: 2rem; }
+      .app-name { font-size: 1.25rem; }
     }
   </style>
 </head>
@@ -86,39 +91,33 @@
     <h1>Jan Zellerhoff</h1>
     <p class="subtitle">iOS App Developer</p>
 
-    <div class="app-section">
-      <div class="app-name">Roll</div>
-      <div class="links">
-        <a href="/roll/">
-          Overview
+    <div class="apps">
+
+      <a href="/roll/" class="app-card">
+        <div class="app-card-row">
+          <div>
+            <div class="app-name">Roll</div>
+            <div class="app-tagline">Photo curation, on-device. Your library, considered.</div>
+          </div>
           <span class="arrow">&rarr;</span>
-        </a>
-        <a href="/roll/privacy.html">
-          Privacy Policy
+        </div>
+      </a>
+
+      <a href="/shin/" class="app-card">
+        <div class="app-card-row">
+          <div>
+            <div class="app-name">shin.</div>
+            <div class="app-tagline">Personal awareness and intentionality.</div>
+          </div>
           <span class="arrow">&rarr;</span>
-        </a>
-        <a href="/roll/impressum.html">
-          Impressum
-          <span class="arrow">&rarr;</span>
-        </a>
-      </div>
+        </div>
+      </a>
+
     </div>
 
-    <div class="divider"></div>
-
-    <div class="app-section">
-      <div class="app-name">shin.</div>
-      <div class="links">
-        <a href="/shin/privacy.html">
-          Privacy Policy
-          <span class="arrow">&rarr;</span>
-        </a>
-        <a href="/shin/impressum.html">
-          Impressum
-          <span class="arrow">&rarr;</span>
-        </a>
-      </div>
-    </div>
+    <footer>
+      © 2026 Jan Zellerhoff · Dortmund, Germany
+    </footer>
   </div>
 </body>
 </html>
