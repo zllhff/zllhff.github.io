@@ -1,79 +1,103 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kept — Datenschutzerkl&auml;rung</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>kept — Datenschutzerklärung</title>
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      background: #fafafa;
-      color: #1a1a1a;
-      line-height: 1.7;
-      padding: 3rem 1.5rem;
+    :root {
+      --sage: #6B8F71;
+      --bg: #FAF7F2;
+      --fg: #1F1B17;
+      --muted: #6B6359;
+      --border: #E6DFD3;
     }
-    .container { max-width: 640px; margin: 0 auto; }
-    .back { font-size: 0.85rem; color: #666; text-decoration: none; display: inline-block; margin-bottom: 2rem; }
-    .back:hover { color: #1a1a1a; }
-    .lang-switch { float: right; font-size: 0.85rem; margin-top: 0.2rem; }
-    .lang-switch a { color: #666; text-decoration: none; }
-    .lang-switch a:hover { color: #1a1a1a; }
-    h1 { font-size: 1.75rem; font-weight: 700; margin-bottom: 0.25rem; }
-    .subtitle { font-size: 0.9rem; color: #666; margin-bottom: 0.5rem; }
-    .updated { font-size: 0.8rem; color: #666; margin-bottom: 2.5rem; }
-    h2 { font-size: 1.05rem; font-weight: 600; margin-top: 2rem; margin-bottom: 0.75rem; }
-    p { margin-bottom: 1rem; font-size: 0.95rem; }
-    ul { margin: 0.5rem 0 1rem 1.25rem; font-size: 0.95rem; }
-    li { margin-bottom: 0.4rem; }
-    a { color: #1a1a1a; }
-    .footer { margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid rgba(0,0,0,0.08); font-size: 0.8rem; color: #666; }
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", system-ui, sans-serif;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 32px 24px 64px;
+      background: var(--bg);
+      color: var(--fg);
+      line-height: 1.55;
+    }
+    h1 { font-size: 32px; letter-spacing: -0.3px; margin: 0 0 8px; }
+    h2 { font-size: 22px; margin: 32px 0 8px; letter-spacing: -0.1px; }
+    h3 { font-size: 17px; margin: 20px 0 6px; }
+    p, li { font-size: 16px; color: var(--fg); }
+    a { color: var(--sage); }
+    .meta { color: var(--muted); font-size: 14px; margin-bottom: 32px; }
+    .pill {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: rgba(107, 143, 113, 0.10);
+      color: var(--sage);
+      font-size: 13px;
+      font-weight: 500;
+      margin-bottom: 16px;
+    }
+    .divider { height: 1px; background: var(--border); margin: 48px 0; }
+    .lang { font-size: 13px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px; }
+    ul { padding-left: 20px; }
+    li { margin-bottom: 6px; }
+    .lang-switcher { display: flex; gap: 14px; font-size: 13px; color: var(--muted); margin-bottom: 24px; }
+    .lang-switcher a { color: var(--sage); text-decoration: none; }
+    .lang-switcher .active { color: var(--muted); cursor: default; }
   </style>
 </head>
 <body>
-  <div class="container">
-    <a href="/" class="back">&larr; Zur&uuml;ck</a>
-    <div class="lang-switch"><a href="/kept/privacy-en.html">English</a></div>
-    <h1>Kept</h1>
-    <div class="subtitle">Datenschutzerkl&auml;rung</div>
-    <div class="updated">Letzte Aktualisierung: 20. Februar 2026</div>
+  <nav class="lang-switcher" aria-label="Sprache">
+    <a href="privacy.html" hreflang="en">EN</a>
+    <span class="active">DE</span>
+    <a href="privacy-es.html" hreflang="es">ES</a>
+    <a href="privacy-fr.html" hreflang="fr">FR</a>
+  </nav>
+  <span class="pill">kept · Datenschutz</span>
+  <h1>Datenschutzerklärung</h1>
+  <p class="meta">Stand: 01.06.2026 · Mit sofortiger Wirkung.</p>
 
-    <!-- TODO: Kept-spezifischen Inhalt einf&uuml;gen -->
+  <p><strong>kept läuft auf deinem iPhone.</strong> Standardmäßig macht die App keine Netzwerkaufrufe und speichert alles lokal. iCloud-Sync ist eine optionale Pro-Funktion unter deiner Kontrolle. Wir betreiben keine Server und sehen deine Dokumente nie.</p>
 
-    <h2>1. &Uuml;bersicht</h2>
-    <p>Kept (&bdquo;die App&ldquo;, &bdquo;wir&ldquo;, &bdquo;uns&ldquo;) nimmt den Schutz Ihrer pers&ouml;nlichen Daten sehr ernst. Diese Datenschutzerkl&auml;rung erl&auml;utert, wie wir mit Ihren Informationen umgehen.</p>
+  <h2>Welche Daten wir erheben</h2>
+  <p><strong>Keine.</strong> kept hat keine Analytics, kein Crash-Reporting, keine Werbe-IDs, keine Nutzungs-Telemetrie und kein Account-System. Es gibt keine kept-Nutzerdatenbank, weil wir keine Server betreiben.</p>
 
-    <h2>2. Datenerhebung</h2>
-    <p>[Beschreiben, welche Daten Kept erhebt.]</p>
+  <h2>Welche Daten wir an Dritte senden</h2>
+  <p><strong>Keine.</strong> Das einzige Signal, das dein Gerät verlässt, ist die anonyme MetricKit-Zusammenfassung, die Apple von jeder iOS-App aggregiert — wir bekommen sie nie zu sehen.</p>
 
-    <h2>3. Lokale Datenspeicherung</h2>
-    <p>[Beschreiben, wie Daten lokal gespeichert werden.]</p>
+  <h2>Was auf deinem Gerät bleibt</h2>
+  <ul>
+    <li>Die Originaldateien, die du importierst — PDFs, Bilder, Scans, Notizen — gespeichert in einem sicheren App-Group-Container, den die Haupt-App und die Share-Erweiterung teilen.</li>
+    <li>Thumbnails, OCR-Text und KI-extrahierte Metadaten (Titel, Kategorien, Geldbeträge) — alle on-device generiert über Apples Vision, NaturalLanguage und Foundation Models Frameworks.</li>
+    <li>Deine Kategorien, Spaces, Stacks, Aktionen und Unterschriften.</li>
+    <li>Deine Einstellungen (Akzentfarbe, Layout, Sortierung etc.) im iOS-Standard-Speicher.</li>
+  </ul>
+  <p>Du kannst all das jederzeit löschen, indem du die App entfernst oder über <em>Einstellungen → kept → Zurücksetzen</em>.</p>
 
-    <h2>4. Drittanbieterdienste</h2>
-    <p>[Auflistung verwendeter Drittanbieterdienste oder Angabe, dass keine verwendet werden.]</p>
+  <h2>iCloud-Sync (optional, Pro-Funktion)</h2>
+  <p>Wenn du iCloud-Sync aktivierst (eine kept-pro-Funktion), nutzt kept Apples CloudKit, um deine Dokumente zwischen deinen eigenen Apple-Geräten zu synchronisieren. Diese Daten leben in <strong>deinem privaten iCloud-Container</strong>, Ende-zu-Ende verschlüsselt von Apple. Wir haben keinen Zugriff. Wir sehen sie nicht. Wir speichern sie auf keiner von kept betriebenen Infrastruktur (die es nicht gibt).</p>
+  <p>Du kannst iCloud-Sync jederzeit unter <em>Einstellungen → kept → iCloud-Sync</em> deaktivieren. Der lokale Modus ist immer verfügbar.</p>
 
-    <h2>5. In-App-K&auml;ufe</h2>
-    <p>K&auml;ufe werden ausschlie&szlig;lich von Apple &uuml;ber StoreKit abgewickelt. Wir haben keinen Zugriff auf Ihre Zahlungsinformationen.</p>
+  <h2>Apple Intelligence (optional, on-device)</h2>
+  <p>Auf iPhone 15 Pro und neueren Geräten nutzt kept Apples on-device Foundation Models Framework, um Dokumenttitel, Kategorien und Stack-Gruppierungen vorzuschlagen. <strong>Alle KI-Verarbeitung passiert auf deinem Gerät.</strong> Kein Dokumenttext verlässt dein iPhone für KI-Zwecke. Auf älteren Geräten fällt kept auf lokale Keyword-Heuristik zurück.</p>
 
-    <h2>6. Datenweitergabe</h2>
-    <p>Wir geben keine Nutzerdaten an Dritte weiter, verkaufen oder &uuml;bertragen diese nicht.</p>
+  <h2>Familienfreigabe</h2>
+  <p>kept pro ist für Apples Familienfreigabe aktiviert — dein Kauf schaltet kept pro für bis zu 5 Familienmitglieder in deiner iCloud-Familiengruppe frei. <strong>Familienfreigabe teilt nur den App-Kauf, nicht deine Dokumente.</strong> Jedes Familienmitglied nutzt sein eigenes iPhone, seine eigene iCloud, seine eigene kept-Bibliothek. Wir sehen keine Familienbeziehungen, keine Mitgliedsnamen, kein Wer-hat-was-geteilt.</p>
 
-    <h2>7. Datenspeicherung &amp; L&ouml;schung</h2>
-    <p>[Beschreiben, wie Nutzer ihre Daten l&ouml;schen k&ouml;nnen.]</p>
+  <h2>Apple Erinnerungen-Integration (optional, Pro)</h2>
+  <p>Wenn du kept mit Apple Erinnerungen verbindest (eine optionale Pro-Funktion), erstellt kept Erinnerungen für Aktionen mit Fälligkeitsdatum. Diese Integration nutzt Apples EventKit-Framework — wir sehen deine Erinnerungen nie, wir geben Einträge nur über Apples API weiter.</p>
 
-    <h2>8. Kinder</h2>
-    <p>Kept richtet sich nicht an Kinder unter 13 Jahren.</p>
+  <h2>Kinderschutz</h2>
+  <p>kept erhebt wissentlich keine Daten von irgendwem, auch nicht von Kindern unter 13. Da kept gar keine Daten erhebt, ist das automatisch der Fall.</p>
 
-    <h2>9. &Auml;nderungen dieser Erkl&auml;rung</h2>
-    <p>Wir k&ouml;nnen diese Datenschutzerkl&auml;rung von Zeit zu Zeit aktualisieren. &Auml;nderungen werden auf dieser Seite ver&ouml;ffentlicht.</p>
+  <h2>Änderungen dieser Erklärung</h2>
+  <p>Wenn wir diese Erklärung aktualisieren, wird das Datum oben angepasst. Wir werden die Erklärung niemals rückwirkend ändern, um Daten zu erheben, die vorher nicht erhoben wurden.</p>
 
-    <h2>10. Kontakt</h2>
-    <p>Bei Fragen zu dieser Datenschutzerkl&auml;rung kontaktieren Sie uns unter:<br>
-    <a href="mailto:ahoi@sent.com">ahoi@sent.com</a></p>
+  <h2>Kontakt</h2>
+  <p>Bei Datenschutz-Fragen, Anfragen oder anderem: <a href="mailto:ahoi@sent.com">ahoi@sent.com</a>.</p>
 
-    <div class="footer">
-      <p>&copy; 2026 Kept &mdash; Alle Rechte vorbehalten.</p>
-    </div>
-  </div>
+  <div class="divider"></div>
+  <p class="meta"><a href="index.html">← Zurück zu kept</a> · <a href="impressum.html">Impressum</a></p>
 </body>
 </html>

@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>kept — Política de Privacidad</title>
+  <style>
+    :root {
+      --sage: #6B8F71;
+      --bg: #FAF7F2;
+      --fg: #1F1B17;
+      --muted: #6B6359;
+      --border: #E6DFD3;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", system-ui, sans-serif;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 32px 24px 64px;
+      background: var(--bg);
+      color: var(--fg);
+      line-height: 1.55;
+    }
+    h1 { font-size: 32px; letter-spacing: -0.3px; margin: 0 0 8px; }
+    h2 { font-size: 22px; margin: 32px 0 8px; letter-spacing: -0.1px; }
+    h3 { font-size: 17px; margin: 20px 0 6px; }
+    p, li { font-size: 16px; color: var(--fg); }
+    a { color: var(--sage); }
+    .meta { color: var(--muted); font-size: 14px; margin-bottom: 32px; }
+    .pill {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: rgba(107, 143, 113, 0.10);
+      color: var(--sage);
+      font-size: 13px;
+      font-weight: 500;
+      margin-bottom: 16px;
+    }
+    .divider { height: 1px; background: var(--border); margin: 48px 0; }
+    .lang { font-size: 13px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px; }
+    ul { padding-left: 20px; }
+    li { margin-bottom: 6px; }
+    .lang-switcher { display: flex; gap: 14px; font-size: 13px; color: var(--muted); margin-bottom: 24px; }
+    .lang-switcher a { color: var(--sage); text-decoration: none; }
+    .lang-switcher .active { color: var(--muted); cursor: default; }
+  </style>
+</head>
+<body>
+  <nav class="lang-switcher" aria-label="Idioma">
+    <a href="privacy.html" hreflang="en">EN</a>
+    <a href="privacy-de.html" hreflang="de">DE</a>
+    <span class="active">ES</span>
+    <a href="privacy-fr.html" hreflang="fr">FR</a>
+  </nav>
+  <span class="pill">kept · Privacidad</span>
+  <h1>Política de Privacidad</h1>
+  <p class="meta">Última actualización: 01-06-2026 · Vigente de inmediato.</p>
+
+  <p><strong>kept funciona en tu iPhone.</strong> Por defecto no hace ninguna llamada de red y guarda todo localmente. La sincronización con iCloud es una función opcional de Pro que tú controlas. No operamos servidores y nunca vemos tus documentos.</p>
+
+  <h2>Datos que recopilamos</h2>
+  <p><strong>Ninguno.</strong> kept no tiene analítica, ni reportes de fallos, ni identificadores publicitarios, ni telemetría de uso, ni sistema de cuentas. No hay base de datos de usuarios de kept porque no operamos servidores.</p>
+
+  <h2>Datos que enviamos a terceros</h2>
+  <p><strong>Ninguno.</strong> La única señal que sale de tu dispositivo es el resumen anónimo de MetricKit que Apple agrega de cada app de iOS — nosotros nunca lo recibimos.</p>
+
+  <h2>Qué vive en tu dispositivo</h2>
+  <ul>
+    <li>Los archivos originales que importas — PDF, imágenes, escaneos, notas — guardados en un contenedor seguro de App Group que la app principal y la extensión de compartir usan juntas.</li>
+    <li>Miniaturas, texto OCR y metadatos extraídos por IA (títulos, categorías, importes) — generados en tu dispositivo usando los frameworks Vision, NaturalLanguage y Foundation Models de Apple.</li>
+    <li>Tus categorías, espacios (Spaces), pilas (Stacks), acciones y firmas.</li>
+    <li>Tus ajustes (color de acento, diseño, orden, etc.) en el almacenamiento estándar de iOS.</li>
+  </ul>
+  <p>Puedes borrar todo lo anterior en cualquier momento eliminando la app o desde <em>Ajustes → kept → Restablecer</em>.</p>
+
+  <h2>Sincronización iCloud (opcional, función Pro)</h2>
+  <p>Si activas la sincronización con iCloud (una función de kept pro), kept usa CloudKit de Apple para sincronizar tus documentos entre tus propios dispositivos Apple. Estos datos viven en <strong>tu contenedor privado de iCloud</strong>, cifrados de extremo a extremo por Apple. No tenemos acceso. No los vemos. No los guardamos en ninguna infraestructura operada por kept (no la hay).</p>
+  <p>Puedes desactivar la sincronización con iCloud en cualquier momento desde <em>Ajustes → kept → Sincronización iCloud</em>. El modo solo-local siempre está disponible.</p>
+
+  <h2>Apple Intelligence (opcional, en el dispositivo)</h2>
+  <p>En iPhone 15 Pro y modelos más nuevos, kept usa el framework Foundation Models de Apple en tu dispositivo para sugerir títulos, categorías y agrupaciones de stacks. <strong>Todo el procesamiento de IA ocurre en tu dispositivo.</strong> Ningún texto de documentos sale de tu iPhone para la IA. En dispositivos anteriores, kept usa heurísticas locales basadas en palabras clave.</p>
+
+  <h2>Family Sharing</h2>
+  <p>kept pro está activado para Family Sharing de Apple — tu compra desbloquea kept pro para hasta 5 miembros de tu familia en tu grupo de iCloud Family. <strong>Family Sharing solo comparte la compra de la app, no tus documentos.</strong> Cada miembro de la familia usa su propio iPhone, su propia iCloud, su propia biblioteca de kept. Nunca vemos relaciones familiares, nombres de miembros, ni quién comparte qué.</p>
+
+  <h2>Integración con Recordatorios de Apple (opcional, Pro)</h2>
+  <p>Si conectas kept con Recordatorios de Apple (función opcional Pro), kept crea recordatorios para acciones con fecha límite. Esta integración usa el framework EventKit de Apple — nunca vemos tus recordatorios, solo enviamos entradas vía la API de Apple.</p>
+
+  <h2>Privacidad de menores</h2>
+  <p>kept no recopila a sabiendas datos de nadie, incluidos menores de 13 años. Como kept no recopila datos en absoluto, esto es automático.</p>
+
+  <h2>Cambios en esta política</h2>
+  <p>Si actualizamos esta política, la fecha de arriba cambiará. Nunca modificaremos la política retroactivamente para recopilar datos que antes no recopilábamos.</p>
+
+  <h2>Contacto</h2>
+  <p>Para preguntas de privacidad, solicitudes o cualquier otra cosa: <a href="mailto:ahoi@sent.com">ahoi@sent.com</a>.</p>
+
+  <div class="divider"></div>
+  <p class="meta"><a href="index.html">← Volver a kept</a> · <a href="impressum.html">Impressum</a></p>
+</body>
+</html>

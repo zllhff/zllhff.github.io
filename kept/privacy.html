@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>kept — Privacy Policy</title>
+  <style>
+    :root {
+      --sage: #6B8F71;
+      --bg: #FAF7F2;
+      --fg: #1F1B17;
+      --muted: #6B6359;
+      --border: #E6DFD3;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", system-ui, sans-serif;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 32px 24px 64px;
+      background: var(--bg);
+      color: var(--fg);
+      line-height: 1.55;
+    }
+    h1 { font-size: 32px; letter-spacing: -0.3px; margin: 0 0 8px; }
+    h2 { font-size: 22px; margin: 32px 0 8px; letter-spacing: -0.1px; }
+    h3 { font-size: 17px; margin: 20px 0 6px; }
+    p, li { font-size: 16px; color: var(--fg); }
+    a { color: var(--sage); }
+    .meta { color: var(--muted); font-size: 14px; margin-bottom: 32px; }
+    .pill {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: rgba(107, 143, 113, 0.10);
+      color: var(--sage);
+      font-size: 13px;
+      font-weight: 500;
+      margin-bottom: 16px;
+    }
+    .divider { height: 1px; background: var(--border); margin: 48px 0; }
+    .lang { font-size: 13px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px; }
+    ul { padding-left: 20px; }
+    li { margin-bottom: 6px; }
+    .lang-switcher { display: flex; gap: 14px; font-size: 13px; color: var(--muted); margin-bottom: 24px; }
+    .lang-switcher a { color: var(--sage); text-decoration: none; }
+    .lang-switcher .active { color: var(--muted); cursor: default; }
+  </style>
+</head>
+<body>
+  <nav class="lang-switcher" aria-label="Language">
+    <span class="active">EN</span>
+    <a href="privacy-de.html" hreflang="de">DE</a>
+    <a href="privacy-es.html" hreflang="es">ES</a>
+    <a href="privacy-fr.html" hreflang="fr">FR</a>
+  </nav>
+  <span class="pill">kept · Privacy Policy</span>
+  <h1>Privacy Policy</h1>
+  <p class="meta">Last updated: 2026-06-01 · Effective immediately.</p>
+
+  <p><strong>kept runs on your iPhone.</strong> By default, it makes no network calls and stores everything locally. iCloud sync is an optional Pro feature that you control. We don't operate any servers and we never see your documents.</p>
+
+  <h2>Data we collect</h2>
+  <p><strong>None.</strong> kept has no analytics, no crash reporting, no advertising IDs, no usage telemetry, and no account system. There is no kept user database because we don't operate any servers.</p>
+
+  <h2>Data we send to third parties</h2>
+  <p><strong>None.</strong> The only signal that ever leaves your device is the anonymous MetricKit summary Apple aggregates from every iOS app — we never receive it.</p>
+
+  <h2>What lives on your device</h2>
+  <ul>
+    <li>The original files you import — PDFs, images, scans, notes — stored in a secure App Group container shared between the main app and the Share Sheet extension.</li>
+    <li>Thumbnails, OCR text, and AI-extracted metadata (titles, categories, monetary amounts) — generated on-device using Apple's Vision, NaturalLanguage and Foundation Models frameworks.</li>
+    <li>Your categories, spaces, stacks, actions, and signatures.</li>
+    <li>Your settings (accent color, layout preference, sort, etc.) in iOS standard storage.</li>
+  </ul>
+  <p>All of the above can be wiped at any time by deleting the app or via <em>Settings → kept → Reset</em>.</p>
+
+  <h2>iCloud Sync (optional, Pro feature)</h2>
+  <p>If you enable iCloud sync (a kept pro feature), kept uses Apple's CloudKit to synchronize your documents across your own Apple devices. This data lives in <strong>your private iCloud container</strong>, end-to-end encrypted by Apple. We do not have access to it. We do not see it. We do not store it on any kept-operated infrastructure (there is none).</p>
+  <p>You can disable iCloud sync at any time in <em>Settings → kept → iCloud Sync</em>. Local-only mode is always available.</p>
+
+  <h2>Apple Intelligence (optional, on-device)</h2>
+  <p>On iPhone 15 Pro and newer, kept uses Apple's on-device Foundation Models framework to suggest document titles, categories, and stack groupings. <strong>All AI processing happens on your device.</strong> No document text ever leaves your iPhone for AI processing. On older devices, kept falls back to local keyword heuristics.</p>
+
+  <h2>Family Sharing</h2>
+  <p>kept pro is enabled for Apple Family Sharing — your purchase unlocks kept pro for up to 5 family members in your iCloud Family Group. <strong>Family Sharing only shares the app purchase, not your documents.</strong> Each family member uses their own iPhone, their own iCloud, their own kept library. We never see family relationships, member names, or who-shared-what.</p>
+
+  <h2>Apple Reminders integration (optional, Pro)</h2>
+  <p>If you connect kept to Apple Reminders (an optional Pro feature), kept creates reminders for due-date actions. This integration uses Apple's EventKit framework — we never see your reminders, only push entries via Apple's API.</p>
+
+  <h2>Children's privacy</h2>
+  <p>kept does not knowingly collect any data from anyone, including children under 13. Since kept collects no data at all, this is automatic.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If we update this policy, the change date above will be revised. We will not retroactively change the policy to collect data that wasn't collected before.</p>
+
+  <h2>Contact</h2>
+  <p>For privacy questions, requests, or anything else: <a href="mailto:ahoi@sent.com">ahoi@sent.com</a>.</p>
+
+  <div class="divider"></div>
+  <p class="meta"><a href="index.html">← Back to kept</a> · <a href="impressum.html">Impressum</a></p>
+</body>
+</html>
