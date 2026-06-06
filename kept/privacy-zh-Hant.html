@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>kept — 隱私權政策</title>
+  <style>
+    :root {
+      --sage: #6B8F71;
+      --bg: #FAF7F2;
+      --fg: #1F1B17;
+      --muted: #6B6359;
+      --border: #E6DFD3;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", system-ui, sans-serif;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 32px 24px 64px;
+      background: var(--bg);
+      color: var(--fg);
+      line-height: 1.55;
+    }
+    h1 { font-size: 32px; letter-spacing: -0.3px; margin: 0 0 8px; }
+    h2 { font-size: 22px; margin: 32px 0 8px; letter-spacing: -0.1px; }
+    h3 { font-size: 17px; margin: 20px 0 6px; }
+    p, li { font-size: 16px; color: var(--fg); }
+    a { color: var(--sage); }
+    .meta { color: var(--muted); font-size: 14px; margin-bottom: 32px; }
+    .pill {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: rgba(107, 143, 113, 0.10);
+      color: var(--sage);
+      font-size: 13px;
+      font-weight: 500;
+      margin-bottom: 16px;
+    }
+    .divider { height: 1px; background: var(--border); margin: 48px 0; }
+    .lang { font-size: 13px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px; }
+    ul { padding-left: 20px; }
+    li { margin-bottom: 6px; }
+    .lang-switcher { display: flex; gap: 14px; font-size: 13px; color: var(--muted); margin-bottom: 24px; }
+    .lang-switcher a { color: var(--sage); text-decoration: none; }
+    .lang-switcher .active { color: var(--muted); cursor: default; }
+  </style>
+</head>
+<body>
+  <nav class="lang-switcher" aria-label="Language">
+    <a href="privacy.html" hreflang="en">EN</a>
+    <a href="privacy-de.html" hreflang="de">DE</a>
+    <a href="privacy-es.html" hreflang="es">ES</a>
+    <a href="privacy-fr.html" hreflang="fr">FR</a>
+    <a href="privacy-it.html" hreflang="it">IT</a>
+    <a href="privacy-ja.html" hreflang="ja">日本語</a>
+    <a href="privacy-ko.html" hreflang="ko">한국어</a>
+    <a href="privacy-nl.html" hreflang="nl">NL</a>
+    <a href="privacy-pt.html" hreflang="pt-BR">PT</a>
+    <a href="privacy-zh-Hans.html" hreflang="zh-Hans">简体</a>
+    <span class="active">繁體</span>
+  </nav>
+  <span class="pill">kept · 隱私</span>
+  <h1>隱私權政策</h1>
+  <p class="meta">最後更新：2026-06-01 · 即時生效。</p>
+
+  <p><strong>kept 在你的 iPhone 上運行。</strong> 預設情況下，它不會進行任何網路請求，並將所有內容儲存在本機。iCloud 同步是一項由你掌控的可選 Pro 功能。我們不營運任何伺服器，也永遠不會看到你的文件。</p>
+
+  <h2>我們收集的資料</h2>
+  <p><strong>沒有。</strong> kept 沒有分析工具、沒有當機報告、沒有廣告 ID、沒有使用情況遙測，也沒有帳號系統。由於我們不營運任何伺服器，因此不存在 kept 使用者資料庫。</p>
+
+  <h2>我們傳送給第三方的資料</h2>
+  <p><strong>沒有。</strong> 唯一離開你裝置的訊號，是 Apple 從每個 iOS App 彙整的匿名 MetricKit 摘要——我們永遠不會收到它。</p>
+
+  <h2>保留在你裝置上的內容</h2>
+  <ul>
+    <li>你匯入的原始檔案——PDF、圖片、掃描檔、筆記——儲存在主 App 與 Share Sheet 擴充功能共享的安全 App Group 容器中。</li>
+    <li>縮圖、OCR 文字以及由 AI 擷取的中繼資料（標題、類別、金額）——使用 Apple 的 Vision、NaturalLanguage 和 Foundation Models 框架在裝置端產生。</li>
+    <li>你的類別、空間、堆疊、動作和簽名。</li>
+    <li>你的設定（強調色、版面配置偏好、排序方式等），儲存在 iOS 標準儲存空間中。</li>
+  </ul>
+  <p>以上所有內容都可以隨時清除，方法是刪除 App，或透過 <em>設定 → kept → 重置</em>。</p>
+
+  <h2>iCloud 同步（可選，Pro 功能）</h2>
+  <p>如果你啟用 iCloud 同步（一項 kept pro 功能），kept 會使用 Apple 的 CloudKit 在你自己的各台 Apple 裝置之間同步文件。這些資料存放在 <strong>你的私人 iCloud 容器</strong>中，由 Apple 進行端對端加密。我們無法存取它。我們看不到它。我們也不會將它儲存在任何由 kept 營運的基礎架構上（根本不存在這樣的設施）。</p>
+  <p>你可以隨時在 <em>設定 → kept → iCloud 同步</em> 中關閉 iCloud 同步。僅本機模式始終可用。</p>
+
+  <h2>Apple Intelligence（可選，裝置端）</h2>
+  <p>在 iPhone 15 Pro 及更新機型上，kept 使用 Apple 的裝置端 Foundation Models 框架來建議文件標題、類別和堆疊分組。<strong>所有 AI 處理都在你的裝置上進行。</strong> 文件文字絕不會離開你的 iPhone 進行 AI 處理。在較舊的裝置上，kept 會回退到本機關鍵字啟發式方法。</p>
+
+  <h2>家人共享</h2>
+  <p>kept pro 已啟用 Apple Family Sharing——你的購買可為 iCloud 家庭群組中最多 5 名家庭成員解鎖 kept pro。<strong>家人共享只共享 App 的購買，不共享你的文件。</strong> 每位家庭成員都使用各自的 iPhone、各自的 iCloud、各自的 kept 資料庫。我們永遠看不到家庭關係、成員姓名，或誰共享了什麼。</p>
+
+  <h2>Apple 提醒事項整合（可選，Pro）</h2>
+  <p>如果你將 kept 連接到 Apple 提醒事項（一項可選的 Pro 功能），kept 會為帶有截止日期的動作建立提醒。此整合使用 Apple 的 EventKit 框架——我們永遠看不到你的提醒事項，只透過 Apple 的 API 推送項目。</p>
+
+  <h2>兒童隱私</h2>
+  <p>kept 不會有意收集任何人的資料，包括 13 歲以下的兒童。由於 kept 根本不收集任何資料，這一點是自動成立的。</p>
+
+  <h2>本政策的變更</h2>
+  <p>如果我們更新本政策，上方的變更日期將會修訂。我們絕不會追溯性地修改本政策，以收集先前未收集的資料。</p>
+
+  <h2>聯絡方式</h2>
+  <p>有關隱私的問題、請求或其他任何事項：<a href="mailto:ahoi@sent.com">ahoi@sent.com</a>。</p>
+
+  <div class="divider"></div>
+  <p class="meta"><a href="index.html">← 返回 kept</a> · <a href="impressum.html">Impressum</a></p>
+</body>
+</html>

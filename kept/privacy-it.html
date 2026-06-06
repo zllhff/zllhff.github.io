@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>kept — Informativa sulla privacy</title>
+  <style>
+    :root {
+      --sage: #6B8F71;
+      --bg: #FAF7F2;
+      --fg: #1F1B17;
+      --muted: #6B6359;
+      --border: #E6DFD3;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", system-ui, sans-serif;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 32px 24px 64px;
+      background: var(--bg);
+      color: var(--fg);
+      line-height: 1.55;
+    }
+    h1 { font-size: 32px; letter-spacing: -0.3px; margin: 0 0 8px; }
+    h2 { font-size: 22px; margin: 32px 0 8px; letter-spacing: -0.1px; }
+    h3 { font-size: 17px; margin: 20px 0 6px; }
+    p, li { font-size: 16px; color: var(--fg); }
+    a { color: var(--sage); }
+    .meta { color: var(--muted); font-size: 14px; margin-bottom: 32px; }
+    .pill {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: rgba(107, 143, 113, 0.10);
+      color: var(--sage);
+      font-size: 13px;
+      font-weight: 500;
+      margin-bottom: 16px;
+    }
+    .divider { height: 1px; background: var(--border); margin: 48px 0; }
+    .lang { font-size: 13px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px; }
+    ul { padding-left: 20px; }
+    li { margin-bottom: 6px; }
+    .lang-switcher { display: flex; gap: 14px; font-size: 13px; color: var(--muted); margin-bottom: 24px; }
+    .lang-switcher a { color: var(--sage); text-decoration: none; }
+    .lang-switcher .active { color: var(--muted); cursor: default; }
+  </style>
+</head>
+<body>
+  <nav class="lang-switcher" aria-label="Language">
+    <a href="privacy.html" hreflang="en">EN</a>
+    <a href="privacy-de.html" hreflang="de">DE</a>
+    <a href="privacy-es.html" hreflang="es">ES</a>
+    <a href="privacy-fr.html" hreflang="fr">FR</a>
+    <span class="active">IT</span>
+    <a href="privacy-ja.html" hreflang="ja">日本語</a>
+    <a href="privacy-ko.html" hreflang="ko">한국어</a>
+    <a href="privacy-nl.html" hreflang="nl">NL</a>
+    <a href="privacy-pt.html" hreflang="pt-BR">PT</a>
+    <a href="privacy-zh-Hans.html" hreflang="zh-Hans">简体</a>
+    <a href="privacy-zh-Hant.html" hreflang="zh-Hant">繁體</a>
+  </nav>
+  <span class="pill">kept · Privacy</span>
+  <h1>Informativa sulla privacy</h1>
+  <p class="meta">Ultimo aggiornamento: 2026-06-01 · In vigore con effetto immediato.</p>
+
+  <p><strong>kept funziona sul tuo iPhone.</strong> Per impostazione predefinita non effettua alcuna chiamata di rete e memorizza tutto in locale. La sincronizzazione iCloud è una funzione Pro opzionale che controlli tu. Non gestiamo alcun server e non vediamo mai i tuoi documenti.</p>
+
+  <h2>Dati che raccogliamo</h2>
+  <p><strong>Nessuno.</strong> kept non ha analytics, né segnalazione dei crash, né ID pubblicitari, né telemetria sull'utilizzo, né alcun sistema di account. Non esiste alcun database degli utenti di kept perché non gestiamo alcun server.</p>
+
+  <h2>Dati che inviamo a terze parti</h2>
+  <p><strong>Nessuno.</strong> L'unico segnale che lascia il tuo dispositivo è il riepilogo anonimo di MetricKit che Apple aggrega da ogni app iOS — noi non lo riceviamo mai.</p>
+
+  <h2>Cosa resta sul tuo dispositivo</h2>
+  <ul>
+    <li>I file originali che importi — PDF, immagini, scansioni, note — conservati in un container App Group sicuro condiviso tra l'app principale e l'estensione Share Sheet.</li>
+    <li>Miniature, testo OCR e metadati estratti dall'IA (titoli, categorie, importi monetari) — generati sul dispositivo tramite i framework Vision, NaturalLanguage e Foundation Models di Apple.</li>
+    <li>Le tue categorie, i tuoi spazi, le tue pile, le tue azioni e le tue firme.</li>
+    <li>Le tue impostazioni (colore d'accento, preferenze di layout, ordinamento, ecc.) nello spazio di archiviazione standard di iOS.</li>
+  </ul>
+  <p>Tutto quanto sopra può essere cancellato in qualsiasi momento eliminando l'app o tramite <em>Impostazioni → kept → Reset</em>.</p>
+
+  <h2>Sincronizzazione iCloud (opzionale, funzione Pro)</h2>
+  <p>Se attivi la sincronizzazione iCloud (una funzione di kept pro), kept utilizza CloudKit di Apple per sincronizzare i tuoi documenti tra i tuoi dispositivi Apple. Questi dati risiedono nel <strong>tuo container iCloud privato</strong>, cifrato end-to-end da Apple. Noi non vi abbiamo accesso. Non li vediamo. Non li conserviamo su alcuna infrastruttura gestita da kept (che non esiste).</p>
+  <p>Puoi disattivare la sincronizzazione iCloud in qualsiasi momento in <em>Impostazioni → kept → Sincronizzazione iCloud</em>. La modalità solo locale è sempre disponibile.</p>
+
+  <h2>Apple Intelligence (opzionale, sul dispositivo)</h2>
+  <p>Su iPhone 15 Pro e modelli più recenti, kept utilizza il framework Foundation Models di Apple sul dispositivo per suggerire titoli, categorie e raggruppamenti in pile per i documenti. <strong>Tutta l'elaborazione dell'IA avviene sul tuo dispositivo.</strong> Nessun testo dei documenti lascia mai il tuo iPhone per l'elaborazione dell'IA. Sui dispositivi più vecchi, kept ripiega su euristiche locali basate su parole chiave.</p>
+
+  <h2>In famiglia</h2>
+  <p>kept pro è abilitato per Apple Family Sharing — il tuo acquisto sblocca kept pro per un massimo di 5 familiari nel tuo gruppo famiglia iCloud. <strong>Apple Family Sharing condivide solo l'acquisto dell'app, non i tuoi documenti.</strong> Ogni familiare usa il proprio iPhone, il proprio iCloud, la propria libreria kept. Non vediamo mai le relazioni familiari, i nomi dei membri o chi-ha-condiviso-cosa.</p>
+
+  <h2>Integrazione con Promemoria di Apple (opzionale, Pro)</h2>
+  <p>Se colleghi kept a Promemoria di Apple (una funzione Pro opzionale), kept crea promemoria per le azioni con scadenza. Questa integrazione utilizza il framework EventKit di Apple — non vediamo mai i tuoi promemoria, ci limitiamo a inviare le voci tramite l'API di Apple.</p>
+
+  <h2>Privacy dei minori</h2>
+  <p>kept non raccoglie consapevolmente alcun dato da nessuno, inclusi i minori di 13 anni. Poiché kept non raccoglie alcun dato, questo avviene automaticamente.</p>
+
+  <h2>Modifiche a questa informativa</h2>
+  <p>Se aggiorniamo questa informativa, la data di aggiornamento qui sopra verrà rivista. Non modificheremo retroattivamente l'informativa per raccogliere dati che prima non venivano raccolti.</p>
+
+  <h2>Contatti</h2>
+  <p>Per domande sulla privacy, richieste o qualsiasi altra cosa: <a href="mailto:ahoi@sent.com">ahoi@sent.com</a>.</p>
+
+  <div class="divider"></div>
+  <p class="meta"><a href="index.html">← Torna a kept</a> · <a href="impressum.html">Impressum</a></p>
+</body>
+</html>

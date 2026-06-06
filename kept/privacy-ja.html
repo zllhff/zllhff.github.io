@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>kept — プライバシーポリシー</title>
+  <style>
+    :root {
+      --sage: #6B8F71;
+      --bg: #FAF7F2;
+      --fg: #1F1B17;
+      --muted: #6B6359;
+      --border: #E6DFD3;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", system-ui, sans-serif;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 32px 24px 64px;
+      background: var(--bg);
+      color: var(--fg);
+      line-height: 1.55;
+    }
+    h1 { font-size: 32px; letter-spacing: -0.3px; margin: 0 0 8px; }
+    h2 { font-size: 22px; margin: 32px 0 8px; letter-spacing: -0.1px; }
+    h3 { font-size: 17px; margin: 20px 0 6px; }
+    p, li { font-size: 16px; color: var(--fg); }
+    a { color: var(--sage); }
+    .meta { color: var(--muted); font-size: 14px; margin-bottom: 32px; }
+    .pill {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: rgba(107, 143, 113, 0.10);
+      color: var(--sage);
+      font-size: 13px;
+      font-weight: 500;
+      margin-bottom: 16px;
+    }
+    .divider { height: 1px; background: var(--border); margin: 48px 0; }
+    .lang { font-size: 13px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px; }
+    ul { padding-left: 20px; }
+    li { margin-bottom: 6px; }
+    .lang-switcher { display: flex; gap: 14px; font-size: 13px; color: var(--muted); margin-bottom: 24px; }
+    .lang-switcher a { color: var(--sage); text-decoration: none; }
+    .lang-switcher .active { color: var(--muted); cursor: default; }
+  </style>
+</head>
+<body>
+  <nav class="lang-switcher" aria-label="Language">
+    <a href="privacy.html" hreflang="en">EN</a>
+    <a href="privacy-de.html" hreflang="de">DE</a>
+    <a href="privacy-es.html" hreflang="es">ES</a>
+    <a href="privacy-fr.html" hreflang="fr">FR</a>
+    <a href="privacy-it.html" hreflang="it">IT</a>
+    <span class="active">日本語</span>
+    <a href="privacy-ko.html" hreflang="ko">한국어</a>
+    <a href="privacy-nl.html" hreflang="nl">NL</a>
+    <a href="privacy-pt.html" hreflang="pt-BR">PT</a>
+    <a href="privacy-zh-Hans.html" hreflang="zh-Hans">简体</a>
+    <a href="privacy-zh-Hant.html" hreflang="zh-Hant">繁體</a>
+  </nav>
+  <span class="pill">kept · プライバシー</span>
+  <h1>プライバシーポリシー</h1>
+  <p class="meta">最終更新日: 2026-06-01 · 即時発効。</p>
+
+  <p><strong>kept はあなたの iPhone 上で動作します。</strong> 初期設定ではネットワーク通信を一切行わず、すべてを端末内に保存します。iCloud 同期は、あなたが管理する任意の Pro 機能です。当社はサーバーを一切運用しておらず、あなたのドキュメントを見ることは決してありません。</p>
+
+  <h2>当社が収集するデータ</h2>
+  <p><strong>ありません。</strong> kept には分析ツール、クラッシュレポート、広告 ID、利用状況テレメトリ、アカウントシステムが一切ありません。当社はサーバーを運用していないため、kept のユーザーデータベースも存在しません。</p>
+
+  <h2>当社が第三者に送信するデータ</h2>
+  <p><strong>ありません。</strong> あなたの端末から外部に出る唯一のシグナルは、Apple がすべての iOS アプリから集計する匿名の MetricKit の概要のみで、当社がそれを受け取ることは決してありません。</p>
+
+  <h2>あなたの端末内に保存されるもの</h2>
+  <ul>
+    <li>あなたがインポートした元のファイル（PDF、画像、スキャン、メモ）。メインアプリと Share Sheet 拡張機能の間で共有される安全な App Group コンテナに保存されます。</li>
+    <li>サムネイル、OCR テキスト、AI が抽出したメタデータ（タイトル、カテゴリ、金額）。Apple の Vision、NaturalLanguage、Foundation Models フレームワークを用いて端末上で生成されます。</li>
+    <li>あなたのカテゴリ、スペース、スタック、アクション、署名。</li>
+    <li>あなたの設定（アクセントカラー、レイアウトの好み、並び順など）。iOS 標準のストレージに保存されます。</li>
+  </ul>
+  <p>上記のすべては、アプリを削除するか、<em>設定 → kept → リセット</em> からいつでも消去できます。</p>
+
+  <h2>iCloud 同期（任意、Pro 機能）</h2>
+  <p>iCloud 同期（kept pro の機能）を有効にすると、kept は Apple の CloudKit を使用して、あなた自身の Apple デバイス間でドキュメントを同期します。このデータは <strong>あなたのプライベートな iCloud コンテナ</strong> に保存され、Apple によってエンドツーエンドで暗号化されます。当社はそれにアクセスできません。見ることもありません。kept が運用するインフラ（そのようなものは存在しません）に保存することもありません。</p>
+  <p>iCloud 同期は <em>設定 → kept → iCloud 同期</em> からいつでも無効にできます。ローカルのみのモードは常に利用可能です。</p>
+
+  <h2>Apple Intelligence（任意、端末上で処理）</h2>
+  <p>iPhone 15 Pro 以降では、kept は Apple の端末上 Foundation Models フレームワークを使用して、ドキュメントのタイトル、カテゴリ、スタックのグループ分けを提案します。<strong>すべての AI 処理はあなたの端末上で行われます。</strong> AI 処理のためにドキュメントのテキストが iPhone から外部に出ることは決してありません。古い端末では、kept はローカルのキーワード・ヒューリスティックにフォールバックします。</p>
+
+  <h2>ファミリー共有</h2>
+  <p>kept pro は Apple Family Sharing に対応しています。あなたの購入により、iCloud ファミリーグループ内の最大 5 人の家族メンバーに対して kept pro がアンロックされます。<strong>ファミリー共有で共有されるのはアプリの購入のみで、あなたのドキュメントは共有されません。</strong> 各家族メンバーは、それぞれ自分の iPhone、自分の iCloud、自分の kept ライブラリを使用します。当社は家族関係、メンバーの名前、誰が何を共有したかを見ることは決してありません。</p>
+
+  <h2>Apple リマインダー連携（任意、Pro）</h2>
+  <p>kept を Apple リマインダーに接続すると（任意の Pro 機能）、kept は期限付きアクションのリマインダーを作成します。この連携は Apple の EventKit フレームワークを使用します。当社があなたのリマインダーを見ることは決してなく、Apple の API を通じて項目を登録するだけです。</p>
+
+  <h2>子どものプライバシー</h2>
+  <p>kept は、13 歳未満の子どもを含め、誰からも意図的にデータを収集することはありません。kept はそもそもデータを一切収集しないため、これは自動的に守られます。</p>
+
+  <h2>本ポリシーの変更</h2>
+  <p>本ポリシーを更新する場合、上記の更新日が改訂されます。以前に収集していなかったデータを収集するために、本ポリシーを遡って変更することはありません。</p>
+
+  <h2>お問い合わせ</h2>
+  <p>プライバシーに関するご質問、ご要望、その他のお問い合わせは: <a href="mailto:ahoi@sent.com">ahoi@sent.com</a>。</p>
+
+  <div class="divider"></div>
+  <p class="meta"><a href="index.html">← kept に戻る</a> · <a href="impressum.html">Impressum</a></p>
+</body>
+</html>

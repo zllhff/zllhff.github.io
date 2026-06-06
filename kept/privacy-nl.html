@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>kept — Privacybeleid</title>
+  <style>
+    :root {
+      --sage: #6B8F71;
+      --bg: #FAF7F2;
+      --fg: #1F1B17;
+      --muted: #6B6359;
+      --border: #E6DFD3;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", system-ui, sans-serif;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 32px 24px 64px;
+      background: var(--bg);
+      color: var(--fg);
+      line-height: 1.55;
+    }
+    h1 { font-size: 32px; letter-spacing: -0.3px; margin: 0 0 8px; }
+    h2 { font-size: 22px; margin: 32px 0 8px; letter-spacing: -0.1px; }
+    h3 { font-size: 17px; margin: 20px 0 6px; }
+    p, li { font-size: 16px; color: var(--fg); }
+    a { color: var(--sage); }
+    .meta { color: var(--muted); font-size: 14px; margin-bottom: 32px; }
+    .pill {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: rgba(107, 143, 113, 0.10);
+      color: var(--sage);
+      font-size: 13px;
+      font-weight: 500;
+      margin-bottom: 16px;
+    }
+    .divider { height: 1px; background: var(--border); margin: 48px 0; }
+    .lang { font-size: 13px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px; }
+    ul { padding-left: 20px; }
+    li { margin-bottom: 6px; }
+    .lang-switcher { display: flex; gap: 14px; font-size: 13px; color: var(--muted); margin-bottom: 24px; }
+    .lang-switcher a { color: var(--sage); text-decoration: none; }
+    .lang-switcher .active { color: var(--muted); cursor: default; }
+  </style>
+</head>
+<body>
+  <nav class="lang-switcher" aria-label="Language">
+    <a href="privacy.html" hreflang="en">EN</a>
+    <a href="privacy-de.html" hreflang="de">DE</a>
+    <a href="privacy-es.html" hreflang="es">ES</a>
+    <a href="privacy-fr.html" hreflang="fr">FR</a>
+    <a href="privacy-it.html" hreflang="it">IT</a>
+    <a href="privacy-ja.html" hreflang="ja">日本語</a>
+    <a href="privacy-ko.html" hreflang="ko">한국어</a>
+    <span class="active">NL</span>
+    <a href="privacy-pt.html" hreflang="pt-BR">PT</a>
+    <a href="privacy-zh-Hans.html" hreflang="zh-Hans">简体</a>
+    <a href="privacy-zh-Hant.html" hreflang="zh-Hant">繁體</a>
+  </nav>
+  <span class="pill">kept · Privacy</span>
+  <h1>Privacybeleid</h1>
+  <p class="meta">Laatst bijgewerkt: 2026-06-01 · Met onmiddellijke ingang van kracht.</p>
+
+  <p><strong>kept draait op je iPhone.</strong> Standaard maakt de app geen netwerkverbindingen en wordt alles lokaal opgeslagen. iCloud-synchronisatie is een optionele Pro-functie die jij beheert. Wij draaien geen servers en zien je documenten nooit.</p>
+
+  <h2>Welke gegevens we verzamelen</h2>
+  <p><strong>Geen.</strong> kept heeft geen analytics, geen crashrapportage, geen advertentie-ID's, geen gebruikstelemetrie en geen accountsysteem. Er is geen kept-gebruikersdatabase, omdat we geen servers draaien.</p>
+
+  <h2>Welke gegevens we naar derden sturen</h2>
+  <p><strong>Geen.</strong> Het enige signaal dat ooit je apparaat verlaat, is de anonieme MetricKit-samenvatting die Apple van elke iOS-app verzamelt — wij ontvangen die nooit.</p>
+
+  <h2>Wat er op je apparaat blijft</h2>
+  <ul>
+    <li>De originele bestanden die je importeert — PDF's, afbeeldingen, scans, notities — opgeslagen in een veilige App Group-container die wordt gedeeld tussen de hoofd-app en de Share Sheet-extensie.</li>
+    <li>Miniaturen, OCR-tekst en door AI geëxtraheerde metadata (titels, categorieën, geldbedragen) — op het apparaat gegenereerd met Apple's Vision-, NaturalLanguage- en Foundation Models-frameworks.</li>
+    <li>Je categorieën, spaces, stacks, acties en handtekeningen.</li>
+    <li>Je instellingen (accentkleur, lay-outvoorkeur, sortering, enz.) in de standaardopslag van iOS.</li>
+  </ul>
+  <p>Al het bovenstaande kan op elk moment worden gewist door de app te verwijderen of via <em>Instellingen → kept → Reset</em>.</p>
+
+  <h2>iCloud-synchronisatie (optioneel, Pro-functie)</h2>
+  <p>Als je iCloud-synchronisatie inschakelt (een kept pro-functie), gebruikt kept Apple's CloudKit om je documenten tussen je eigen Apple-apparaten te synchroniseren. Deze gegevens leven in <strong>je privé iCloud-container</strong>, end-to-end versleuteld door Apple. Wij hebben er geen toegang toe. Wij zien ze niet. Wij slaan ze niet op op enige door kept beheerde infrastructuur (die er niet is).</p>
+  <p>Je kunt iCloud-synchronisatie op elk moment uitschakelen via <em>Instellingen → kept → iCloud-synchronisatie</em>. De lokale modus is altijd beschikbaar.</p>
+
+  <h2>Apple Intelligence (optioneel, op het apparaat)</h2>
+  <p>Op iPhone 15 Pro en nieuwer gebruikt kept Apple's Foundation Models-framework op het apparaat om documenttitels, categorieën en stack-groeperingen voor te stellen. <strong>Alle AI-verwerking gebeurt op je apparaat.</strong> Er verlaat nooit documenttekst je iPhone voor AI-verwerking. Op oudere apparaten valt kept terug op lokale trefwoordheuristieken.</p>
+
+  <h2>Delen met gezin</h2>
+  <p>kept pro is geschikt voor Apple Family Sharing — je aankoop ontgrendelt kept pro voor maximaal 5 gezinsleden in je iCloud-gezinsgroep. <strong>Family Sharing deelt alleen de app-aankoop, niet je documenten.</strong> Elk gezinslid gebruikt zijn eigen iPhone, zijn eigen iCloud, zijn eigen kept-bibliotheek. Wij zien nooit gezinsrelaties, namen van leden of wie-wat-gedeeld-heeft.</p>
+
+  <h2>Integratie met Apple Herinneringen (optioneel, Pro)</h2>
+  <p>Als je kept koppelt aan Apple Herinneringen (een optionele Pro-functie), maakt kept herinneringen aan voor acties met een vervaldatum. Deze integratie gebruikt Apple's EventKit-framework — wij zien je herinneringen nooit, we voegen alleen items toe via Apple's API.</p>
+
+  <h2>Privacy van kinderen</h2>
+  <p>kept verzamelt nooit bewust gegevens van wie dan ook, ook niet van kinderen onder de 13. Aangezien kept helemaal geen gegevens verzamelt, gebeurt dit automatisch.</p>
+
+  <h2>Wijzigingen in dit beleid</h2>
+  <p>Als we dit beleid bijwerken, wordt de datum hierboven aangepast. We zullen het beleid nooit met terugwerkende kracht wijzigen om gegevens te verzamelen die eerder niet werden verzameld.</p>
+
+  <h2>Contact</h2>
+  <p>Voor privacyvragen, verzoeken of iets anders: <a href="mailto:ahoi@sent.com">ahoi@sent.com</a>.</p>
+
+  <div class="divider"></div>
+  <p class="meta"><a href="index.html">← Terug naar kept</a> · <a href="impressum.html">Impressum</a></p>
+</body>
+</html>
