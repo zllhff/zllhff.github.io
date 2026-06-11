@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Roll — 개인정보 처리방침</title>
+  <style>
+    :root {
+      --sienna: #C6502D;
+      --bg: #FAF7F2;
+      --fg: #1F1B17;
+      --muted: #6B6359;
+      --border: #E6DFD3;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", system-ui, sans-serif;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 32px 24px 64px;
+      background: var(--bg);
+      color: var(--fg);
+      line-height: 1.55;
+    }
+    h1 { font-size: 32px; letter-spacing: -0.3px; margin: 0 0 8px; }
+    h2 { font-size: 22px; margin: 32px 0 8px; letter-spacing: -0.1px; }
+    h3 { font-size: 17px; margin: 20px 0 6px; }
+    p, li { font-size: 16px; color: var(--fg); }
+    a { color: var(--sienna); }
+    .meta { color: var(--muted); font-size: 14px; margin-bottom: 32px; }
+    .pill {
+      display: inline-block; padding: 4px 10px; border-radius: 999px;
+      background: var(--sienna); color: white; font-size: 12px; font-weight: 600;
+      letter-spacing: 0.4px; text-transform: uppercase; margin-bottom: 16px;
+    }
+    .divider { height: 1px; background: var(--border); margin: 48px 0; }
+    .lang { font-size: 13px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px; }
+    ul { padding-left: 20px; }
+    li { margin-bottom: 6px; }
+    .lang-switcher { display: flex; flex-wrap: wrap; gap: 14px; font-size: 13px; color: var(--muted); margin-bottom: 24px; }
+    .lang-switcher a { color: var(--sienna); text-decoration: none; }
+    .lang-switcher .active { color: var(--muted); cursor: default; }
+  </style>
+</head>
+<body>
+  <nav class="lang-switcher" aria-label="언어">
+    <a href="privacy.html" hreflang="en">EN</a>
+    <a href="privacy-de.html" hreflang="de">DE</a>
+    <a href="privacy-es.html" hreflang="es">ES</a>
+    <a href="privacy-fr.html" hreflang="fr">FR</a>
+    <a href="privacy-it.html" hreflang="it">IT</a>
+    <a href="privacy-ja.html" hreflang="ja">JA</a>
+    <span class="active">KO</span>
+    <a href="privacy-nl.html" hreflang="nl">NL</a>
+    <a href="privacy-pl.html" hreflang="pl">PL</a>
+    <a href="privacy-pt-br.html" hreflang="pt-BR">PT</a>
+    <a href="privacy-sv.html" hreflang="sv">SV</a>
+    <a href="privacy-zh-hans.html" hreflang="zh-Hans">ZH</a>
+  </nav>
+  <span class="pill">Roll · 개인정보 처리방침</span>
+  <h1>개인정보 처리방침</h1>
+  <p class="meta">최종 업데이트: 2026-05-22 · 즉시 발효.</p>
+
+  <p><strong>Roll은 전적으로 사용자의 iPhone에서 작동합니다.</strong> 네트워크 호출을 일절
+  하지 않습니다. 저희는 사용자의 사진이나 사용자에 관한 어떠한 데이터도 수집, 전송,
+  저장하지 않으며, 접근 권한 자체가 없습니다.</p>
+
+  <h2>수집하는 데이터</h2>
+  <p><strong>없습니다.</strong> Roll에는 서버, 분석 도구, 충돌 보고, 광고 ID, 사용 텔레메트리가
+  없습니다. Roll 계정도 존재하지 않습니다 — Roll에는 "사용자"라는 개념 자체가 없기
+  때문입니다.</p>
+
+  <h2>제3자에게 전송하는 데이터</h2>
+  <p><strong>없습니다.</strong> 기기를 떠나는 유일한 신호는 Apple이 모든 iOS 앱에서 집계하는
+  익명 MetricKit 요약뿐이며, 저희는 이를 결코 받아보지 않습니다.</p>
+
+  <h2>기기에 저장되는 항목</h2>
+  <ul>
+    <li>Apple Vision 프레임워크가 기기에서 직접 계산한 시각적 특징 인덱스(선명도, 얼굴,
+    임베딩). 사진 자체나 썸네일은 절대 저장되지 않습니다.</li>
+    <li>작업 기록(어떤 세트를 검토하고, 보관하고, 버렸는지). 앱 내 "최근 버린 항목" 로그를
+    구동합니다.</li>
+    <li>활동 로그 — <em>설정 → 개인정보 보호 및 데이터 → 활동 로그</em>에서 확인할 수 있는
+    세션별 집계 기록. 총 개수만 포함하며 기기를 절대 떠나지 않습니다.</li>
+    <li>사용자 설정(기본 Keep-N, 테마 등)은 iOS 표준 저장소에 보관됩니다.</li>
+  </ul>
+  <p>위의 모든 항목은 <em>설정 → Roll 재설정</em>에서 언제든지 삭제할 수 있습니다.</p>
+
+  <h2>사진 보관함 접근</h2>
+  <p>Roll은 첫 실행 시 사용자가 부여한 권한 범위 내에서 Apple의 <strong>PhotoKit</strong>을
+  사용합니다. <em>제한된 접근</em>이 권장 옵션입니다 — Roll은 사용자가 명시적으로 선택한
+  사진만 볼 수 있습니다. <em>iPhone 설정 → Roll → 사진</em>에서 언제든지 변경할 수
+  있습니다.</p>
+
+  <h2>앱 내 구입</h2>
+  <p>Roll은 두 가지 구입 옵션을 제공합니다: 일회성 Lifetime 구입과 주간 구독입니다. 둘 다
+  Apple의 StoreKit이 전적으로 처리하며, 저희는 결제 정보나 신원 정보를 전혀 받지 않습니다.
+  구독은 iPhone 설정 → Apple ID → 구독에서 취소하기 전까지 자동으로 갱신됩니다.</p>
+
+  <h2>아동</h2>
+  <p>Roll은 아동을 대상으로 하지 않으며, 아동의 데이터를 포함해 어떠한 데이터도 수집하지
+  않습니다.</p>
+
+  <h2>직접 확인하는 방법</h2>
+  <p>에어플레인 모드를 켜고 Roll을 평소처럼 사용해 보세요. 모든 기능이 그대로 작동합니다.
+  Roll이 네트워크로 통신하지 않는다는 가장 간단하고 확실한 증거입니다.</p>
+
+  <h2>지역별 고지</h2>
+  <h3>EU (GDPR)</h3>
+  <p>Roll은 개인 데이터를 전혀 받지 않으므로 처리하지도 않습니다. GDPR이 정의하는 모든
+  권리(열람, 삭제, 이동)는 정의상 이미 보장됩니다 — 데이터는 사용자의 기기에 있으며
+  사용자가 직접 통제합니다.</p>
+  <h3>캘리포니아 (CCPA / CPRA)</h3>
+  <p>Roll은 개인정보를 판매하거나 공유하지 않습니다. 판매할 데이터 자체가 없으므로 별도의
+  거부(옵트아웃) 절차도 없습니다.</p>
+
+  <h2>본 방침의 변경</h2>
+  <p>Roll이 수집하거나 전송하는 내용이 변경되는 경우, 본 방침을 업데이트하고 변경이
+  적용되기 전에 앱 내에 알림을 표시합니다.</p>
+
+  <h2>문의</h2>
+  <p>개인정보 관련 문의: <a href="mailto:ahoi@sent.com">ahoi@sent.com</a></p>
+</body>
+</html>

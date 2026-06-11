@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Roll — Polityka prywatności</title>
+  <style>
+    :root {
+      --sienna: #C6502D;
+      --bg: #FAF7F2;
+      --fg: #1F1B17;
+      --muted: #6B6359;
+      --border: #E6DFD3;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", system-ui, sans-serif;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 32px 24px 64px;
+      background: var(--bg);
+      color: var(--fg);
+      line-height: 1.55;
+    }
+    h1 { font-size: 32px; letter-spacing: -0.3px; margin: 0 0 8px; }
+    h2 { font-size: 22px; margin: 32px 0 8px; letter-spacing: -0.1px; }
+    h3 { font-size: 17px; margin: 20px 0 6px; }
+    p, li { font-size: 16px; color: var(--fg); }
+    a { color: var(--sienna); }
+    .meta { color: var(--muted); font-size: 14px; margin-bottom: 32px; }
+    .pill {
+      display: inline-block; padding: 4px 10px; border-radius: 999px;
+      background: var(--sienna); color: white; font-size: 12px; font-weight: 600;
+      letter-spacing: 0.4px; text-transform: uppercase; margin-bottom: 16px;
+    }
+    .divider { height: 1px; background: var(--border); margin: 48px 0; }
+    .lang { font-size: 13px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px; }
+    ul { padding-left: 20px; }
+    li { margin-bottom: 6px; }
+    .lang-switcher { display: flex; flex-wrap: wrap; gap: 14px; font-size: 13px; color: var(--muted); margin-bottom: 24px; }
+    .lang-switcher a { color: var(--sienna); text-decoration: none; }
+    .lang-switcher .active { color: var(--muted); cursor: default; }
+  </style>
+</head>
+<body>
+  <nav class="lang-switcher" aria-label="Język">
+    <a href="privacy.html" hreflang="en">EN</a>
+    <a href="privacy-de.html" hreflang="de">DE</a>
+    <a href="privacy-es.html" hreflang="es">ES</a>
+    <a href="privacy-fr.html" hreflang="fr">FR</a>
+    <a href="privacy-it.html" hreflang="it">IT</a>
+    <a href="privacy-ja.html" hreflang="ja">JA</a>
+    <a href="privacy-ko.html" hreflang="ko">KO</a>
+    <a href="privacy-nl.html" hreflang="nl">NL</a>
+    <span class="active">PL</span>
+    <a href="privacy-pt-br.html" hreflang="pt-BR">PT</a>
+    <a href="privacy-sv.html" hreflang="sv">SV</a>
+    <a href="privacy-zh-hans.html" hreflang="zh-Hans">ZH</a>
+  </nav>
+  <span class="pill">Roll · Polityka prywatności</span>
+  <h1>Polityka prywatności</h1>
+  <p class="meta">Ostatnia aktualizacja: 2026-05-22 · Obowiązuje ze skutkiem natychmiastowym.</p>
+
+  <p><strong>Roll działa w całości na Twoim iPhonie.</strong> Nie wykonuje żadnych połączeń
+  sieciowych. Nie zbieramy, nie wysyłamy ani nie przechowujemy Twoich zdjęć ani żadnych danych
+  o Tobie — i nie mamy do nich dostępu.</p>
+
+  <h2>Jakie dane zbieramy</h2>
+  <p><strong>Żadnych.</strong> Roll nie ma serwerów, analityki, raportowania awarii,
+  identyfikatorów reklamowych ani telemetrii użycia. Nie istnieje konto Roll, ponieważ Roll
+  nie zna nawet pojęcia „użytkownika".</p>
+
+  <h2>Jakie dane wysyłamy podmiotom trzecim</h2>
+  <p><strong>Żadnych.</strong> Jedynym sygnałem, który kiedykolwiek opuszcza Twoje urządzenie,
+  jest anonimowe podsumowanie MetricKit, które Apple agreguje z każdej aplikacji iOS — my nigdy
+  go nie otrzymujemy.</p>
+
+  <h2>Co pozostaje na Twoim urządzeniu</h2>
+  <ul>
+    <li>Indeks cech wizualnych obliczany lokalnie przez framework Vision firmy Apple (ostrość,
+    twarze, embeddingi). Nigdy samo zdjęcie, nigdy miniatury.</li>
+    <li>Historia Twoich działań (które zestawy przejrzano, zachowano lub odrzucono). Zasila
+    dziennik „Ostatnio odrzucone" w aplikacji.</li>
+    <li>Dziennik aktywności — zbiorcze dane z każdej sesji, dostępne w <em>Ustawienia →
+    Prywatność i dane → Dziennik aktywności</em>. Zawiera wyłącznie łączne liczby i nigdy nie
+    opuszcza urządzenia.</li>
+    <li>Twoje ustawienia (domyślne Keep-N, motyw itd.) w standardowej pamięci iOS.</li>
+  </ul>
+  <p>Wszystko powyższe możesz w każdej chwili usunąć przez <em>Ustawienia → Zresetuj
+  Roll</em>.</p>
+
+  <h2>Dostęp do biblioteki zdjęć</h2>
+  <p>Roll korzysta z <strong>PhotoKit</strong> firmy Apple w ramach uprawnień przyznanych przy
+  pierwszym uruchomieniu. <em>Dostęp ograniczony</em> to zalecany wybór — Roll widzi wyłącznie
+  zdjęcia, które jawnie wybierzesz. Możesz to zmienić w każdej chwili w <em>Ustawienia iPhone'a
+  → Roll → Zdjęcia</em>.</p>
+
+  <h2>Zakupy w aplikacji</h2>
+  <p>Roll oferuje dwie opcje zakupu: jednorazowy zakup Lifetime oraz subskrypcję tygodniową.
+  Obie obsługuje w całości StoreKit firmy Apple — nie otrzymujemy żadnych danych płatniczych
+  ani tożsamościowych. Subskrypcja odnawia się automatycznie do momentu anulowania w
+  Ustawieniach iPhone'a → Apple ID → Subskrypcje.</p>
+
+  <h2>Dzieci</h2>
+  <p>Roll nie jest skierowany do dzieci i nie zbiera żadnych danych — w tym danych dzieci.</p>
+
+  <h2>Jak to sprawdzić</h2>
+  <p>Włącz tryb samolotowy i używaj Roll jak zwykle. Każda funkcja nadal działa. To najprostszy
+  i najpewniejszy dowód, że Roll nigdy nie komunikuje się przez sieć.</p>
+
+  <h2>Informacje regionalne</h2>
+  <h3>UE (RODO)</h3>
+  <p>Roll nie przetwarza danych osobowych, ponieważ nigdy ich nie otrzymuje. Z definicji
+  przysługują Ci wszystkie prawa wynikające z RODO (dostęp, usunięcie, przenoszenie) — dane
+  znajdują się na Twoim urządzeniu i kontrolujesz je bezpośrednio.</p>
+  <h3>Kalifornia (CCPA / CPRA)</h3>
+  <p>Roll nie sprzedaje ani nie udostępnia danych osobowych. Nie ma opcji rezygnacji, ponieważ
+  nie ma danych, które można by sprzedać.</p>
+
+  <h2>Zmiany w niniejszej polityce</h2>
+  <p>Jeśli Roll kiedykolwiek zmieni zakres zbieranych lub przesyłanych danych, niniejsza
+  polityka zostanie zaktualizowana, a w aplikacji pojawi się powiadomienie, zanim zmiana
+  wejdzie w życie.</p>
+
+  <h2>Kontakt</h2>
+  <p>Pytania dotyczące prywatności: <a href="mailto:ahoi@sent.com">ahoi@sent.com</a></p>
+</body>
+</html>

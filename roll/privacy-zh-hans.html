@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Roll — 隐私政策</title>
+  <style>
+    :root {
+      --sienna: #C6502D;
+      --bg: #FAF7F2;
+      --fg: #1F1B17;
+      --muted: #6B6359;
+      --border: #E6DFD3;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", system-ui, sans-serif;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 32px 24px 64px;
+      background: var(--bg);
+      color: var(--fg);
+      line-height: 1.55;
+    }
+    h1 { font-size: 32px; letter-spacing: -0.3px; margin: 0 0 8px; }
+    h2 { font-size: 22px; margin: 32px 0 8px; letter-spacing: -0.1px; }
+    h3 { font-size: 17px; margin: 20px 0 6px; }
+    p, li { font-size: 16px; color: var(--fg); }
+    a { color: var(--sienna); }
+    .meta { color: var(--muted); font-size: 14px; margin-bottom: 32px; }
+    .pill {
+      display: inline-block; padding: 4px 10px; border-radius: 999px;
+      background: var(--sienna); color: white; font-size: 12px; font-weight: 600;
+      letter-spacing: 0.4px; text-transform: uppercase; margin-bottom: 16px;
+    }
+    .divider { height: 1px; background: var(--border); margin: 48px 0; }
+    .lang { font-size: 13px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px; }
+    ul { padding-left: 20px; }
+    li { margin-bottom: 6px; }
+    .lang-switcher { display: flex; flex-wrap: wrap; gap: 14px; font-size: 13px; color: var(--muted); margin-bottom: 24px; }
+    .lang-switcher a { color: var(--sienna); text-decoration: none; }
+    .lang-switcher .active { color: var(--muted); cursor: default; }
+  </style>
+</head>
+<body>
+  <nav class="lang-switcher" aria-label="语言">
+    <a href="privacy.html" hreflang="en">EN</a>
+    <a href="privacy-de.html" hreflang="de">DE</a>
+    <a href="privacy-es.html" hreflang="es">ES</a>
+    <a href="privacy-fr.html" hreflang="fr">FR</a>
+    <a href="privacy-it.html" hreflang="it">IT</a>
+    <a href="privacy-ja.html" hreflang="ja">JA</a>
+    <a href="privacy-ko.html" hreflang="ko">KO</a>
+    <a href="privacy-nl.html" hreflang="nl">NL</a>
+    <a href="privacy-pl.html" hreflang="pl">PL</a>
+    <a href="privacy-pt-br.html" hreflang="pt-BR">PT</a>
+    <a href="privacy-sv.html" hreflang="sv">SV</a>
+    <span class="active">ZH</span>
+  </nav>
+  <span class="pill">Roll · 隐私政策</span>
+  <h1>隐私政策</h1>
+  <p class="meta">最后更新：2026-05-22 · 即时生效。</p>
+
+  <p><strong>Roll 完全在你的 iPhone 上运行。</strong>它不发起任何网络请求。我们不收集、
+  不发送、不存储你的照片或任何与你相关的数据——我们根本无法访问这些数据。</p>
+
+  <h2>我们收集哪些数据</h2>
+  <p><strong>不收集任何数据。</strong>Roll 没有服务器、没有数据分析、没有崩溃报告、没有
+  广告标识符，也没有使用遥测。不存在 Roll 账户，因为 Roll 根本没有"用户"这个概念。</p>
+
+  <h2>我们向第三方发送哪些数据</h2>
+  <p><strong>不发送任何数据。</strong>唯一会离开你设备的信号，是 Apple 从每个 iOS 应用
+  汇总的匿名 MetricKit 摘要——我们从未收到过它。</p>
+
+  <h2>哪些内容保留在你的设备上</h2>
+  <ul>
+    <li>由 Apple Vision 框架在本地计算的视觉特征索引（清晰度、人脸、嵌入向量）。绝不包含
+    照片本身，也绝不包含缩略图。</li>
+    <li>你的操作历史（你审阅、保留或舍弃了哪些照片组）。它驱动应用内的"最近舍弃"
+    记录。</li>
+    <li>活动日志——可在<em>设置 → 隐私与数据 → 活动日志</em>中查看的每次会话汇总数据。
+    仅包含总计数，永远不会离开你的设备。</li>
+    <li>你的设置（默认 Keep-N、主题等），存储在 iOS 标准存储空间中。</li>
+  </ul>
+  <p>以上所有内容都可以随时通过<em>设置 → 重置 Roll</em> 一键清除。</p>
+
+  <h2>照片图库访问</h2>
+  <p>Roll 使用 Apple 的 <strong>PhotoKit</strong>，权限范围以你首次启动时的授权为准。
+  推荐选择<em>受限访问</em>——Roll 只能看到你明确选取的照片。你可以随时在
+  <em>iPhone 设置 → Roll → 照片</em>中更改。</p>
+
+  <h2>App 内购买</h2>
+  <p>Roll 提供两种购买方式：一次性买断（Lifetime）和按周订阅。两者均完全由 Apple 的
+  StoreKit 处理——我们不会收到任何付款或身份数据。订阅会自动续期，直到你在
+  iPhone 设置 → Apple ID → 订阅中取消。</p>
+
+  <h2>儿童</h2>
+  <p>Roll 不面向儿童，也不收集任何数据——包括儿童数据。</p>
+
+  <h2>如何验证</h2>
+  <p>开启飞行模式，照常使用 Roll。所有功能依然可用。这是证明 Roll 从不进行网络通信的
+  最简单、最可靠的方法。</p>
+
+  <h2>地区性声明</h2>
+  <h3>欧盟（GDPR）</h3>
+  <p>Roll 不处理个人数据，因为它从未接收过任何个人数据。GDPR 规定的所有权利（访问、
+  删除、可携带性）你天然全部拥有——数据就在你的设备上，由你直接掌控。</p>
+  <h3>加利福尼亚州（CCPA / CPRA）</h3>
+  <p>Roll 不出售也不共享个人信息。不存在"选择退出"机制，因为根本没有可出售的数据。</p>
+
+  <h2>本政策的变更</h2>
+  <p>如果 Roll 将来改变其收集或传输的内容，本政策会随之更新，并在变更生效前在应用内
+  发出通知。</p>
+
+  <h2>联系方式</h2>
+  <p>隐私相关问题：<a href="mailto:ahoi@sent.com">ahoi@sent.com</a></p>
+</body>
+</html>
