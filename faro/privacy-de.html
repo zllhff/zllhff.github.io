@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Faro — Datenschutzerklärung</title>
+  <style>
+    :root {
+      --amber: #B0710F;
+      --bg: #FAF7F2;
+      --fg: #1F1B17;
+      --muted: #6B6359;
+      --border: #E6DFD3;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", system-ui, sans-serif;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 32px 24px 64px;
+      background: var(--bg);
+      color: var(--fg);
+      line-height: 1.55;
+    }
+    h1 { font-size: 32px; letter-spacing: -0.3px; margin: 0 0 8px; }
+    h2 { font-size: 22px; margin: 32px 0 8px; letter-spacing: -0.1px; }
+    h3 { font-size: 17px; margin: 20px 0 6px; }
+    p, li { font-size: 16px; color: var(--fg); }
+    a { color: var(--amber); }
+    .meta { color: var(--muted); font-size: 14px; margin-bottom: 32px; }
+    .pill {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: rgba(176, 113, 15, 0.10);
+      color: var(--amber);
+      font-size: 13px;
+      font-weight: 500;
+      margin-bottom: 16px;
+    }
+    .divider { height: 1px; background: var(--border); margin: 48px 0; }
+    .lang { font-size: 13px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px; }
+    ul { padding-left: 20px; }
+    li { margin-bottom: 6px; }
+    .lang-switcher { display: flex; gap: 14px; font-size: 13px; color: var(--muted); margin-bottom: 24px; }
+    .lang-switcher a { color: var(--amber); text-decoration: none; }
+    .lang-switcher .active { color: var(--muted); cursor: default; }
+  </style>
+</head>
+<body>
+  <nav class="lang-switcher" aria-label="Sprache">
+    <a href="privacy.html" hreflang="en">EN</a>
+    <span class="active">DE</span>
+  </nav>
+  <span class="pill">Faro · Datenschutz</span>
+  <h1>Datenschutzerklärung</h1>
+  <p class="meta">Zuletzt aktualisiert: 28.06.2026 · Ab sofort gültig.</p>
+
+  <p><strong>Faro läuft auf deinem iPhone.</strong> Dein Versprechen, deine Gründe, dein Journal und deine ganze Reise liegen lokal auf deinem Gerät. Wir betreiben keine Server, es gibt kein Konto, und wir sehen deine Daten nie. Faro zeichnet eine echte Weltkarte und stellt dafür einige wenige Anfragen nach außen — unten klar erklärt —, aber keine davon trägt etwas Persönliches über dich.</p>
+
+  <h2>Daten, die wir erheben</h2>
+  <p><strong>Keine.</strong> Faro hat keine Analyse, kein Crash-Reporting, keine Werbe-IDs, keine Nutzungs-Telemetrie und kein Konto-System. Es gibt keine Faro-Nutzerdatenbank, weil wir keine Server betreiben.</p>
+
+  <h2>Was auf deinem Gerät bleibt</h2>
+  <ul>
+    <li>Dein Versprechen, die gewählte Kadenz und das private „Warum", das du dazu geschrieben hast.</li>
+    <li>Deine Reise: erreichte Orte, zurückgelegte Distanz, Kapitel, Auszeichnungen, Reisepass-Stempel und jede Journal-Notiz, die du ergänzt.</li>
+    <li>Deine Einstellungen (Darstellung, Erinnerungszeit, Reiseart, App-Sperre) im iOS-Standardspeicher.</li>
+    <li>Ein kleiner Schnappschuss deiner aktuellen Position, der über einen sicheren App-Group-Container mit Faros eigenen Home-Widgets und der Live Activity geteilt wird.</li>
+  </ul>
+  <p>All das lässt sich jederzeit löschen, indem du die App entfernst.</p>
+
+  <h2>Was Faro über das Netzwerk anfragt</h2>
+  <p>Um eine lebendige Karte zu zeichnen, stellt Faro zwei Arten von Anfragen. Keine enthält dein Versprechen, deine Gründe, deine Identität oder ein Konto — denn ein Konto gibt es nicht.</p>
+  <h3>Kartenkacheln</h3>
+  <p>Die Weltkarte wird aus Standard-Kartenkacheln gezeichnet, die von einem Karten-Anbieter geladen werden. Wie bei jeder Karten-App werden dabei die IP-Adresse deines Geräts und der gerade betrachtete Kartenausschnitt an diesen Anbieter übermittelt, damit er die passenden Kacheln zurückgeben kann. Es wird nichts über dein Ziel oder darüber, wer du bist, gesendet. Der Anbieter verarbeitet dies nach seiner eigenen Datenschutzerklärung.</p>
+  <h3>Ortsbeschreibungen</h3>
+  <p>Wenn du einen Hafen erreichst, lädt Faro ggf. eine kurze öffentliche Beschreibung dieses Orts von Wikipedia / Wikimedia. Übermittelt wird allein der öffentliche Name des Orts. Das Ergebnis wird auf deinem Gerät zwischengespeichert. Wikimedia verarbeitet diese Anfragen nach der <a href="https://foundation.wikimedia.org/wiki/Policy:Privacy_policy">Datenschutzerklärung der Wikimedia Foundation</a>.</p>
+
+  <h2>Optionale iCloud-Synchronisierung</h2>
+  <p>Wenn du die iCloud-Synchronisierung aktivierst, nutzt Faro Apples CloudKit, um deine Reise über deine eigenen Apple-Geräte hinweg im Gleichschritt zu halten. Diese Daten liegen in <strong>deinem privaten iCloud-Container</strong>, von Apple verschlüsselt. Wir haben keinen Zugriff darauf, wir sehen sie nicht, und sie werden nie auf einer von Faro betriebenen Infrastruktur gespeichert (es gibt keine). Ein reiner Lokal-Modus ist jederzeit verfügbar.</p>
+
+  <h2>Apple Health (optional)</h2>
+  <p>Wenn du einen Pfad wählst, der sich an deiner Aktivität bemisst, liest Faro die relevanten Werte <strong>ausschließlich auf deinem Gerät</strong> aus Apple Health, um deine Reise voranzubringen. Diese Daten verlassen dein iPhone nie und werden nie an uns gesendet. Du kannst den Zugriff jederzeit unter iOS-Einstellungen → Health widerrufen.</p>
+
+  <h2>Face-ID-App-Sperre (optional)</h2>
+  <p>Wenn du die App-Sperre einschaltest, bittet Faro iOS, vor dem Öffnen Face ID, Touch ID oder deinen Code zu prüfen. Das übernimmt vollständig Apples Secure Enclave — Faro erhält nur ein Ja/Nein und <strong>sieht deine biometrischen Daten nie</strong>.</p>
+
+  <h2>Käufe</h2>
+  <p>Faros optionale einmalige „Voyager"-Freischaltung wird vollständig von Apple über den App Store abgewickelt. Wir sehen deine Zahlungsdaten nie. Ob du gekauft hast, wird auf dem Gerät aus deinem App-Store-Beleg ermittelt.</p>
+
+  <h2>Benachrichtigungen</h2>
+  <p>Die optionale tägliche Erinnerung ist eine lokale Benachrichtigung, die auf deinem Gerät geplant wird. Es gibt keinen Push-Server, und ihr Text nennt nie, worum es bei deinem Versprechen geht.</p>
+
+  <h2>Datenschutz von Kindern</h2>
+  <p>Faro erhebt wissentlich keine Daten von irgendjemandem, auch nicht von Kindern unter 13. Da Faro überhaupt keine Daten erhebt, ist das automatisch gegeben.</p>
+
+  <h2>Änderungen dieser Erklärung</h2>
+  <p>Wenn wir diese Erklärung aktualisieren, wird das Datum oben angepasst. Wir ändern die Erklärung nicht rückwirkend, um Daten zu erheben, die zuvor nicht erhoben wurden.</p>
+
+  <h2>Kontakt</h2>
+  <p>Für Datenschutzfragen, Anliegen oder alles andere: <a href="mailto:ahoi@sent.com">ahoi@sent.com</a>.</p>
+
+  <div class="divider"></div>
+  <p class="meta"><a href="index.html">← Zurück zu Faro</a> · <a href="impressum.html">Impressum</a></p>
+</body>
+</html>

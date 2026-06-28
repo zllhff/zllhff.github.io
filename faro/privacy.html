@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Faro — Privacy Policy</title>
+  <style>
+    :root {
+      --amber: #B0710F;
+      --bg: #FAF7F2;
+      --fg: #1F1B17;
+      --muted: #6B6359;
+      --border: #E6DFD3;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", system-ui, sans-serif;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 32px 24px 64px;
+      background: var(--bg);
+      color: var(--fg);
+      line-height: 1.55;
+    }
+    h1 { font-size: 32px; letter-spacing: -0.3px; margin: 0 0 8px; }
+    h2 { font-size: 22px; margin: 32px 0 8px; letter-spacing: -0.1px; }
+    h3 { font-size: 17px; margin: 20px 0 6px; }
+    p, li { font-size: 16px; color: var(--fg); }
+    a { color: var(--amber); }
+    .meta { color: var(--muted); font-size: 14px; margin-bottom: 32px; }
+    .pill {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: rgba(176, 113, 15, 0.10);
+      color: var(--amber);
+      font-size: 13px;
+      font-weight: 500;
+      margin-bottom: 16px;
+    }
+    .divider { height: 1px; background: var(--border); margin: 48px 0; }
+    .lang { font-size: 13px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px; }
+    ul { padding-left: 20px; }
+    li { margin-bottom: 6px; }
+    .lang-switcher { display: flex; gap: 14px; font-size: 13px; color: var(--muted); margin-bottom: 24px; }
+    .lang-switcher a { color: var(--amber); text-decoration: none; }
+    .lang-switcher .active { color: var(--muted); cursor: default; }
+  </style>
+</head>
+<body>
+  <nav class="lang-switcher" aria-label="Language">
+    <span class="active">EN</span>
+    <a href="privacy-de.html" hreflang="de">DE</a>
+  </nav>
+  <span class="pill">Faro · Privacy Policy</span>
+  <h1>Privacy Policy</h1>
+  <p class="meta">Last updated: 2026-06-28 · Effective immediately.</p>
+
+  <p><strong>Faro runs on your iPhone.</strong> Your promise, your reasons, your journal, and your whole voyage are stored locally on your device. We don't operate any servers, we have no account system, and we never see your data. Faro draws a real world map, so it makes a small number of outbound requests — described plainly below — but none of them carry anything personal about you.</p>
+
+  <h2>Data we collect</h2>
+  <p><strong>None.</strong> Faro has no analytics, no crash reporting, no advertising identifiers, no usage telemetry, and no account system. There is no Faro user database, because we don't operate any servers.</p>
+
+  <h2>What lives on your device</h2>
+  <ul>
+    <li>Your promise, the cadence you chose, and the private "why" you wrote for it.</li>
+    <li>Your voyage: the places you've reached, distance travelled, chapters, awards, passport stamps, and any journal notes you add.</li>
+    <li>Your settings (theme, reminder time, travel mode, app lock) in iOS standard storage.</li>
+    <li>A small snapshot of your current position, shared with Faro's own Home Screen widgets and Live Activity through a secure App Group container.</li>
+  </ul>
+  <p>All of the above can be wiped at any time by deleting the app.</p>
+
+  <h2>What Faro requests over the network</h2>
+  <p>To draw a living map, Faro makes two kinds of request. Neither includes your promise, your reasons, your identity, or any account — because there is no account.</p>
+  <h3>Map tiles</h3>
+  <p>The world map is rendered from standard map tiles fetched from a map-tile provider. Like any map app, this sends your device's IP address and the map area you are looking at to that provider so it can return the right tiles. It does not send anything about your goal or who you are. The provider processes this under its own privacy policy.</p>
+  <h3>Place descriptions</h3>
+  <p>When you reach a port, Faro may fetch a short public description of that place from Wikipedia / Wikimedia. The only thing sent is the public name of the place. The result is cached on your device. Wikimedia processes these requests under the <a href="https://foundation.wikimedia.org/wiki/Policy:Privacy_policy">Wikimedia Foundation privacy policy</a>.</p>
+
+  <h2>Optional iCloud sync</h2>
+  <p>If you enable iCloud sync, Faro uses Apple's CloudKit to keep your voyage in step across your own Apple devices. This data lives in <strong>your private iCloud container</strong>, encrypted by Apple. We do not have access to it, we do not see it, and it is never stored on any Faro-operated infrastructure (there is none). Local-only mode is always available.</p>
+
+  <h2>Apple Health (optional)</h2>
+  <p>If you choose a path that is paced by your activity, Faro reads the relevant values from Apple Health <strong>on your device only</strong>, to move your voyage forward. This data never leaves your iPhone and is never sent to us. You can revoke access at any time in iOS Settings → Health.</p>
+
+  <h2>Face ID app lock (optional)</h2>
+  <p>If you turn on the app lock, Faro asks iOS to verify Face ID, Touch ID, or your passcode before opening. This is handled entirely by Apple's Secure Enclave — Faro only receives a yes/no result and <strong>never sees your biometric data</strong>.</p>
+
+  <h2>Purchases</h2>
+  <p>Faro's optional one-time "Voyager" unlock is processed entirely by Apple through the App Store. We never see your payment details. Whether you've purchased is determined on-device from your App Store receipt.</p>
+
+  <h2>Notifications</h2>
+  <p>The optional daily reminder is a local notification scheduled on your device. There is no push server, and its text never names what your promise is about.</p>
+
+  <h2>Children's privacy</h2>
+  <p>Faro does not knowingly collect any data from anyone, including children under 13. Since Faro collects no data at all, this is automatic.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If we update this policy, the change date above will be revised. We will not retroactively change the policy to collect data that wasn't collected before.</p>
+
+  <h2>Contact</h2>
+  <p>For privacy questions, requests, or anything else: <a href="mailto:ahoi@sent.com">ahoi@sent.com</a>.</p>
+
+  <div class="divider"></div>
+  <p class="meta"><a href="index.html">← Back to Faro</a> · <a href="impressum.html">Impressum</a></p>
+</body>
+</html>
