@@ -7,16 +7,24 @@ for app in faro roll kept shin vow; do
   mkdir -p "$REPO/assets/screenshots/$app/de" "$REPO/assets/screenshots/$app/en"
 done
 
-# --- Icons (copied as-is, all sources are already 120x120 flattened renders) ---
-cp "/Users/jan/Documents/Claude/Faro/build/Faro.xcarchive/Products/Applications/Faro.app/Faro60x60@2x.png" \
+# --- Icons ---
+# Sources from .xcarchive builds are Apple-optimized PNGs (CgBI chunk), which
+# standard browsers cannot render. Re-encode through `sips -s format png` to
+# strip CgBI and produce a standard PNG. The Vow source (Debug simulator
+# build) is already a standard PNG, but is re-encoded too for consistency.
+icon() {
+  local src="$1" dest="$2"
+  sips -s format png "$src" --out "$dest" >/dev/null
+}
+icon "/Users/jan/Documents/Claude/Faro/build/Faro.xcarchive/Products/Applications/Faro.app/Faro60x60@2x.png" \
   "$REPO/assets/icons/faro.png"
-cp "/Users/jan/Documents/Claude/roll/.asc/artifacts/Roll-IOS-1.2.0-1.xcarchive/Products/Applications/Roll.app/AppIcon60x60@2x.png" \
+icon "/Users/jan/Documents/Claude/roll/.asc/artifacts/Roll-IOS-1.2.0-1.xcarchive/Products/Applications/Roll.app/AppIcon60x60@2x.png" \
   "$REPO/assets/icons/roll.png"
-cp "/Users/jan/Documents/Claude/kept app/release/Filed.xcarchive/Products/Applications/Filed.app/AppIcon60x60@2x.png" \
+icon "/Users/jan/Documents/Claude/kept app/release/Filed.xcarchive/Products/Applications/Filed.app/AppIcon60x60@2x.png" \
   "$REPO/assets/icons/kept.png"
-cp "/Users/jan/Documents/Claude/shin app/.asc/artifacts/Shin-1.2.1-11.xcarchive/Products/Applications/shin.app/AppIcon60x60@2x.png" \
+icon "/Users/jan/Documents/Claude/shin app/.asc/artifacts/Shin-1.2.1-11.xcarchive/Products/Applications/shin.app/AppIcon60x60@2x.png" \
   "$REPO/assets/icons/shin.png"
-cp "/Users/jan/Documents/Claude/Still/build/Build/Products/Debug-iphonesimulator/Still.app/AppIcon60x60@2x.png" \
+icon "/Users/jan/Documents/Claude/Still/build/Build/Products/Debug-iphonesimulator/Still.app/AppIcon60x60@2x.png" \
   "$REPO/assets/icons/vow.png"
 
 # --- Screenshots: resize to 480px width, convert to JPEG quality 82 ---
