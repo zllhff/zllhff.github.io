@@ -19,10 +19,17 @@ test('every app has name, icon, tagline, philosophy, and benefit in both languag
   }
 });
 
-test('every app has exactly 3 screenshots per language', () => {
+test('every app has 3 to 5 screenshots per language, matching de/en counts', () => {
   for (const app of APPS) {
-    assert.equal(app.screenshots.de.length, 3, `${app.id} de screenshots`);
-    assert.equal(app.screenshots.en.length, 3, `${app.id} en screenshots`);
+    for (const lang of ['de', 'en']) {
+      const n = app.screenshots[lang].length;
+      assert.ok(n >= 3 && n <= 5, `${app.id} ${lang} has ${n} screenshots (want 3 to 5)`);
+    }
+    assert.equal(
+      app.screenshots.de.length,
+      app.screenshots.en.length,
+      `${app.id} de/en screenshot counts differ`,
+    );
   }
 });
 

@@ -248,6 +248,7 @@ body {
   height: 320px;
   width: auto;
   border-radius: var(--radius-sm);
+  border: 1px solid rgb(128 128 128 / 0.28);
   flex-shrink: 0;
   cursor: zoom-in;
   transition: transform 0.2s var(--ease);
@@ -297,6 +298,7 @@ body {
   max-width: 92vw;
   max-height: 92vh;
   border-radius: var(--radius-sm);
+  border: 1px solid rgb(255 255 255 / 0.14);
   box-shadow: 0 24px 64px -16px rgb(0 0 0 / 0.6);
   animation: modal-in 0.2s var(--ease);
 }

@@ -59,13 +59,17 @@ resize "$ROLL_SRC_EN/scene-01-hero.png"       "$REPO/assets/screenshots/roll/en/
 resize "$ROLL_SRC_EN/scene-02-cleanup.png"    "$REPO/assets/screenshots/roll/en/2.jpg"
 resize "$ROLL_SRC_EN/scene-04-fullscreen.png" "$REPO/assets/screenshots/roll/en/3.jpg"
 
-KEPT_SRC="/Users/jan/Documents/Claude/kept app/docs/asc/screenshots-raw"
-resize "$KEPT_SRC/iphone69_de_library.png" "$REPO/assets/screenshots/kept/de/1.jpg"
-resize "$KEPT_SRC/iphone69_de_actions.png" "$REPO/assets/screenshots/kept/de/2.jpg"
-resize "$KEPT_SRC/iphone69_de_search.png"  "$REPO/assets/screenshots/kept/de/3.jpg"
-resize "$KEPT_SRC/iphone69_en_library.png" "$REPO/assets/screenshots/kept/en/1.jpg"
-resize "$KEPT_SRC/iphone69_en_actions.png" "$REPO/assets/screenshots/kept/en/2.jpg"
-resize "$KEPT_SRC/iphone69_en_search.png"  "$REPO/assets/screenshots/kept/en/3.jpg"
+# Kept uses 5 visually distinct marketing screenshots (English UI). The older
+# ASC raw set (library/actions/search) was three near-identical list views, so
+# it was replaced. The same 5 serve both languages (no localized marketing set).
+KEPT_SRC="/Users/jan/Documents/Claude/kept app/marketing/x-assets-2026-07/screenshots"
+KEPT_SHOTS=(01-library 06-viewer 07-inspector 08-cancellation 14-library-light)
+i=1
+for shot in "${KEPT_SHOTS[@]}"; do
+  resize "$KEPT_SRC/$shot.png" "$REPO/assets/screenshots/kept/de/$i.jpg"
+  resize "$KEPT_SRC/$shot.png" "$REPO/assets/screenshots/kept/en/$i.jpg"
+  i=$((i + 1))
+done
 
 SHIN_SRC_DE="/Users/jan/Documents/Claude/shin app/store_assets/screenshots/de-DE"
 SHIN_SRC_EN="/Users/jan/Documents/Claude/shin app/store_assets/screenshots/en-US"
