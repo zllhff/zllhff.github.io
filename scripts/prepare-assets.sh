@@ -10,21 +10,29 @@ done
 # --- Icons ---
 # Sources from .xcarchive builds are Apple-optimized PNGs (CgBI chunk), which
 # standard browsers cannot render. Re-encode through `sips -s format png` to
-# strip CgBI and produce a standard PNG. The Vow source (Debug simulator
-# build) is already a standard PNG, but is re-encoded too for consistency.
-icon() {
+# strip CgBI and produce a standard PNG. Faro/Kept/Shin only have a 120x120
+# flattened archive render available (no higher-res source on disk), so they
+# are re-encoded at native size. Roll and Vow have real 1024x1024 sources and
+# are downsampled to 480 for a crisper result at the larger tile size.
+icon_native() {
   local src="$1" dest="$2"
   sips -s format png "$src" --out "$dest" >/dev/null
 }
-icon "/Users/jan/Documents/Claude/Faro/build/Faro.xcarchive/Products/Applications/Faro.app/Faro60x60@2x.png" \
+icon_hq() {
+  local src="$1" dest="$2"
+  sips -s format png --resampleWidth 480 "$src" --out "$dest" >/dev/null
+}
+icon_native "/Users/jan/Documents/Claude/Faro/build/Faro.xcarchive/Products/Applications/Faro.app/Faro60x60@2x.png" \
   "$REPO/assets/icons/faro.png"
-icon "/Users/jan/Documents/Claude/roll/.asc/artifacts/Roll-IOS-1.2.0-1.xcarchive/Products/Applications/Roll.app/AppIcon60x60@2x.png" \
+icon_hq "/Users/jan/Documents/Claude/roll/src/Roll/Resources/Assets.xcassets/AppIcon.appiconset/AppIcon-1024.png" \
   "$REPO/assets/icons/roll.png"
-icon "/Users/jan/Documents/Claude/kept app/release/Filed.xcarchive/Products/Applications/Filed.app/AppIcon60x60@2x.png" \
+icon_native "/Users/jan/Documents/Claude/kept app/release/Filed.xcarchive/Products/Applications/Filed.app/AppIcon60x60@2x.png" \
   "$REPO/assets/icons/kept.png"
-icon "/Users/jan/Documents/Claude/shin app/.asc/artifacts/Shin-1.2.1-11.xcarchive/Products/Applications/shin.app/AppIcon60x60@2x.png" \
+icon_native "/Users/jan/Documents/Claude/shin app/.asc/artifacts/Shin-1.2.1-11.xcarchive/Products/Applications/shin.app/AppIcon60x60@2x.png" \
   "$REPO/assets/icons/shin.png"
-icon "/Users/jan/Documents/Claude/Still/build/Build/Products/Debug-iphonesimulator/Still.app/AppIcon60x60@2x.png" \
+# Vow's source is the current post-rename "unbroken ring" icon (Icon Composer
+# asset catalog), not the stale pre-rename Debug-simulator build product.
+icon_hq "/Users/jan/Documents/Claude/Still/Still/Assets.xcassets/AppIcon.appiconset/icon_light.png" \
   "$REPO/assets/icons/vow.png"
 
 # --- Screenshots: resize to 480px width, convert to JPEG quality 82 ---
