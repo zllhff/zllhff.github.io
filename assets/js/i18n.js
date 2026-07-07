@@ -14,7 +14,7 @@ export const STRINGS = {
     en: 'Jan Zellerhoff',
   },
   headerIntro: {
-    de: 'Funf ruhige iOS-Apps. Privacy-first, fur die Dauer gebaut.',
+    de: 'Fünf ruhige iOS-Apps. Privacy-first, für die Dauer gebaut.',
     en: 'Five quiet iOS apps. Privacy-first, built to last.',
   },
   storeButton: {
