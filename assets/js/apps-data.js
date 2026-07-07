@@ -1,0 +1,152 @@
+export const APPS = [
+  {
+    id: 'faro',
+    name: 'Faro',
+    icon: 'assets/icons/faro.png',
+    storeUrl: 'https://apps.apple.com/de/app/faro-eine-t%C3%A4gliche-reise/id6785093908',
+    tagline: {
+      de: 'Ein tägliches Versprechen lässt ein Boot über die echte Weltkarte segeln.',
+      en: 'A daily promise sails a boat across a real world map.',
+    },
+    philosophy: {
+      de: 'Faro macht aus einem kleinen, täglichen Versprechen eine ruhige, fortlaufende Reise. Statt Streaks, die bei einem verpassten Tag alles zunichtemachen, wartet dein Boot einfach vor Anker, bis du bereit bist. Fortschritt ist Geografie, nicht Schuldgefühl.',
+      en: "Faro turns keeping one small daily promise into a quiet, ongoing journey. Instead of streaks that punish a missed day, your boat simply waits at anchor until you're ready again. Progress is geography, not guilt.",
+    },
+    benefit: {
+      de: 'Halte deine Gewohnheit durch und entdecke echte Städte und Länder auf einer echten Karte. Einmal kaufen, kein Abo, alles bleibt auf deinem Gerät. Kein Account, kein Druck, kein verlorener Fortschritt.',
+      en: "Keep your habit and watch real cities and countries reveal themselves on an actual map. Buy once, no subscription, everything stays on your device. No account, no pressure, no lost progress.",
+    },
+    screenshots: {
+      de: [
+        'assets/screenshots/faro/de/1.jpg',
+        'assets/screenshots/faro/de/2.jpg',
+        'assets/screenshots/faro/de/3.jpg',
+      ],
+      en: [
+        'assets/screenshots/faro/en/1.jpg',
+        'assets/screenshots/faro/en/2.jpg',
+        'assets/screenshots/faro/en/3.jpg',
+      ],
+    },
+  },
+  {
+    id: 'roll',
+    name: 'Roll',
+    icon: 'assets/icons/roll.png',
+    storeUrl: 'https://apps.apple.com/de/app/roll-foto-kuration/id6772247083',
+    tagline: {
+      de: 'Foto-Kuration, komplett auf dem Gerät. Deine Bibliothek, durchdacht.',
+      en: 'Photo curation, on-device. Your library, considered.',
+    },
+    philosophy: {
+      de: 'Roll findet, dass Tausende Fotos aufzuräumen keine Stunden Wischen und keinen Cloud-Dienst braucht, der deine privaten Bilder sieht. Sortieren passiert komplett auf deinem iPhone, eine klare Entscheidung nach der anderen.',
+      en: "Roll believes tidying thousands of photos shouldn't take hours of scrolling, and shouldn't need a cloud service that sees your private pictures. Sorting happens entirely on your iPhone, one clear decision at a time.",
+    },
+    benefit: {
+      de: 'Roll zeigt dir schwache Aufnahmen, Serienbilder, unscharfe Fotos und Screenshots, damit du sie in Minuten statt Stunden loswirst. Deine Fotos verlassen nie dein Handy.',
+      en: "Roll surfaces the weak shots, bursts, blurry frames, and screenshots so you can clear them out in minutes instead of hours. Your photos never leave your phone.",
+    },
+    screenshots: {
+      de: [
+        'assets/screenshots/roll/de/1.jpg',
+        'assets/screenshots/roll/de/2.jpg',
+        'assets/screenshots/roll/de/3.jpg',
+      ],
+      en: [
+        'assets/screenshots/roll/en/1.jpg',
+        'assets/screenshots/roll/en/2.jpg',
+        'assets/screenshots/roll/en/3.jpg',
+      ],
+    },
+  },
+  {
+    id: 'kept',
+    name: 'kept',
+    icon: 'assets/icons/kept.png',
+    storeUrl: 'https://apps.apple.com/de/app/kept-dokumente-scanner/id6777199188',
+    tagline: {
+      de: 'Ein ruhiger Ort für deine Dokumente. Privacy-first Dokumenten-Organizer.',
+      en: 'A quiet place for your papers. Privacy-first document organizer.',
+    },
+    philosophy: {
+      de: 'kept behandelt deine Dokumente wie ein guter Aktenschrank: leise, privat, ohne Rückfragen. Kein Server entscheidet, wie dein Reisepass oder Mietvertrag sortiert wird. Dein iPhone tut das, und nur du siehst es.',
+      en: 'kept treats your documents the way a good filing cabinet does: quietly, privately, without asking questions. No server decides how your passport or lease gets organized. Your iPhone does, and only you can see it.',
+    },
+    benefit: {
+      de: 'Scanne, unterschreibe und organisiere Reisepässe, Belege und Verträge in Sekunden. Apple Intelligence benennt jeden Scan automatisch, Kündigungsschreiben kommen fertig formatiert. Einmal kaufen, die ganze Familie kann es nutzen.',
+      en: 'Scan, sign, and organize passports, receipts, and contracts in seconds. Apple Intelligence names every scan for you, and cancellation letters come pre-formatted. Buy once, your whole family can use it.',
+    },
+    screenshots: {
+      de: [
+        'assets/screenshots/kept/de/1.jpg',
+        'assets/screenshots/kept/de/2.jpg',
+        'assets/screenshots/kept/de/3.jpg',
+      ],
+      en: [
+        'assets/screenshots/kept/en/1.jpg',
+        'assets/screenshots/kept/en/2.jpg',
+        'assets/screenshots/kept/en/3.jpg',
+      ],
+    },
+  },
+  {
+    id: 'shin',
+    name: 'shin.',
+    icon: 'assets/icons/shin.png',
+    storeUrl: 'https://apps.apple.com/de/app/shin-brich-den-autopilot/id6759466244',
+    tagline: {
+      de: 'Brich den Autopilot. Persönliche Achtsamkeit für iOS.',
+      en: 'Break the autopilot. Personal awareness for iOS.',
+    },
+    philosophy: {
+      de: 'shin. ist ein ruhiger Begleiter, der zeigt, wie du wirklich durch deine Tage gehst, statt im Autopilot zu laufen. Es gibt keinen Punktestand und nichts vorzuspielen. Es spiegelt einfach deine Muster zurück.',
+      en: 'shin. is a quiet companion for noticing how you actually move through your days, instead of running on autopilot. There is no score to chase and nothing to perform for. It simply reflects your patterns back to you.',
+    },
+    benefit: {
+      de: 'Erkenne Muster in deinem Alltag und durchbrich die, die dir nicht guttun. Alles bleibt auf deinem Gerät. Keine Accounts, keine Analyse, keine Cloud.',
+      en: "Notice the patterns in your days and break the ones that don't serve you. Everything stays on your device. No accounts, no analytics, no cloud.",
+    },
+    screenshots: {
+      de: [
+        'assets/screenshots/shin/de/1.jpg',
+        'assets/screenshots/shin/de/2.jpg',
+        'assets/screenshots/shin/de/3.jpg',
+      ],
+      en: [
+        'assets/screenshots/shin/en/1.jpg',
+        'assets/screenshots/shin/en/2.jpg',
+        'assets/screenshots/shin/en/3.jpg',
+      ],
+    },
+  },
+  {
+    id: 'vow',
+    name: 'Vow',
+    icon: 'assets/icons/vow.png',
+    storeUrl: null,
+    tagline: {
+      de: 'Ein Versprechen, gehalten durch Ritual. Fokus und App-Blocker für iOS.',
+      en: 'A promise, kept by ritual. Focus and app blocking for iOS.',
+    },
+    philosophy: {
+      de: 'Vow macht das Weglegen des Handys zu einem kleinen Ritual statt einem Willenskraft-Kampf. Tippe einen NFC-Sticker an oder starte eine Session, und eine Phase wie Deep Work, Familienzeit oder Schlaf beginnt, mit deinen ablenkenden Apps wirklich außer Reichweite.',
+      en: 'Vow turns putting your phone down into a small ritual instead of a battle of willpower. Tap an NFC sticker or start a session, and a phase like deep work, family time, or sleep begins, with your distracting apps genuinely out of reach.',
+    },
+    benefit: {
+      de: 'Wähle eine Phase, löse sie per Ritual aus, und lass Benachrichtigungen geräteübergreifend verstummen. Keine Gamification, keine Streaks zu pflegen, nur ein Wort, das du dir selbst hältst.',
+      en: 'Choose a phase, trigger it by ritual, and let notifications go quiet across your devices. No gamification, no streaks to maintain, just a word you keep with yourself.',
+    },
+    screenshots: {
+      de: [
+        'assets/screenshots/vow/de/1.jpg',
+        'assets/screenshots/vow/de/2.jpg',
+        'assets/screenshots/vow/de/3.jpg',
+      ],
+      en: [
+        'assets/screenshots/vow/en/1.jpg',
+        'assets/screenshots/vow/en/2.jpg',
+        'assets/screenshots/vow/en/3.jpg',
+      ],
+    },
+  },
+];
