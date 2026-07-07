@@ -3,151 +3,67 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jan Zellerhoff — iOS Apps</title>
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
-      background: #fafafa;
-      color: #1a1a1a;
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 40px 20px;
-      line-height: 1.6;
-    }
-    .container { max-width: 560px; width: 100%; }
-    h1 {
-      font-size: 2.5rem;
-      font-weight: 300;
-      letter-spacing: -0.02em;
-      margin-bottom: 8px;
-      color: #1a1a1a;
-    }
-    .subtitle {
-      font-size: 1rem;
-      color: #666;
-      font-weight: 400;
-      margin-bottom: 64px;
-    }
-    .apps {
-      display: flex;
-      flex-direction: column;
-      gap: 4px;
-    }
-    .app-card {
-      display: block;
-      padding: 24px 0;
-      border-bottom: 1px solid #e5e5e5;
-      text-decoration: none;
-      color: inherit;
-      transition: padding 0.2s ease, color 0.2s ease;
-    }
-    .app-card:last-child { border-bottom: none; }
-    .app-card:hover { padding-left: 8px; }
-    .app-card-row {
-      display: flex;
-      align-items: baseline;
-      justify-content: space-between;
-      gap: 16px;
-    }
-    .app-name {
-      font-size: 1.5rem;
-      font-weight: 500;
-      letter-spacing: -0.01em;
-      color: #1a1a1a;
-    }
-    .app-tagline {
-      font-size: 0.95rem;
-      color: #666;
-      margin-top: 4px;
-      font-weight: 400;
-    }
-    .arrow {
-      color: #999;
-      font-size: 1.2rem;
-      flex-shrink: 0;
-      transition: color 0.2s ease, transform 0.2s ease;
-    }
-    .app-card:hover .arrow {
-      color: #0066ff;
-      transform: translateX(4px);
-    }
-    footer {
-      margin-top: 80px;
-      font-size: 0.8rem;
-      color: #999;
-    }
-    footer a { color: #999; text-decoration: underline; }
-    @media (max-width: 480px) {
-      h1 { font-size: 2rem; }
-      .app-name { font-size: 1.25rem; }
-    }
-  </style>
+  <title>Jan Zellerhoff · iOS Apps</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-  <div class="container">
-    <h1>Jan Zellerhoff</h1>
-    <p class="subtitle">iOS App Developer</p>
-
-    <div class="apps">
-
-      <a href="/faro/" class="app-card">
-        <div class="app-card-row">
-          <div>
-            <div class="app-name">Faro</div>
-            <div class="app-tagline">A daily voyage. Keep one promise, sail a real world map.</div>
+  <div class="page">
+    <header class="page-header">
+      <div>
+        <h1>Jan Zellerhoff</h1>
+        <p class="intro">Five quiet iOS apps. Privacy-first, built to last.</p>
+      </div>
+      <button class="lang-toggle" type="button">
+        <span class="lang-option is-active">DE</span>
+        <span class="lang-option">EN</span>
+      </button>
+    </header>
+    <main class="app-grid">
+      <article class="app-card is-open">
+        <button class="app-card-summary" type="button">
+          <img class="app-icon" src="assets/icons/faro.png" alt="Faro app icon" width="48" height="48">
+          <span class="app-summary-text">
+            <span class="app-name">Faro</span>
+            <span class="app-tagline">A daily promise sails a boat across a real world map.</span>
+          </span>
+          <svg class="chevron" width="20" height="20" viewBox="0 0 20 20" aria-hidden="true">
+            <path d="M5 7.5L10 12.5L15 7.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <div class="app-card-details">
+          <div class="app-card-details-inner">
+            <p class="app-philosophy">Test philosophy paragraph.</p>
+            <p class="app-benefit">Test benefit paragraph.</p>
+            <div class="app-screenshots">
+              <img src="assets/screenshots/faro/en/1.jpg" alt="Faro screenshot">
+              <img src="assets/screenshots/faro/en/2.jpg" alt="Faro screenshot">
+              <img src="assets/screenshots/faro/en/3.jpg" alt="Faro screenshot">
+            </div>
+            <a class="app-store-button" href="#">View on the App Store</a>
           </div>
-          <span class="arrow">&rarr;</span>
         </div>
-      </a>
-
-      <a href="/kept/" class="app-card">
-        <div class="app-card-row">
-          <div>
-            <div class="app-name">kept</div>
-            <div class="app-tagline">Your important documents, kept. Private, on-device.</div>
-          </div>
-          <span class="arrow">&rarr;</span>
+      </article>
+      <article class="app-card">
+        <button class="app-card-summary" type="button">
+          <img class="app-icon" src="assets/icons/roll.png" alt="Roll app icon" width="48" height="48">
+          <span class="app-summary-text">
+            <span class="app-name">Roll</span>
+            <span class="app-tagline">Photo curation, on-device.</span>
+          </span>
+          <svg class="chevron" width="20" height="20" viewBox="0 0 20 20" aria-hidden="true">
+            <path d="M5 7.5L10 12.5L15 7.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <div class="app-card-details">
+          <div class="app-card-details-inner"></div>
         </div>
-      </a>
-
-      <a href="/roll/" class="app-card">
-        <div class="app-card-row">
-          <div>
-            <div class="app-name">Roll</div>
-            <div class="app-tagline">Photo curation, on-device. Your library, considered.</div>
-          </div>
-          <span class="arrow">&rarr;</span>
-        </div>
-      </a>
-
-      <a href="/shin/" class="app-card">
-        <div class="app-card-row">
-          <div>
-            <div class="app-name">shin.</div>
-            <div class="app-tagline">Personal awareness and intentionality.</div>
-          </div>
-          <span class="arrow">&rarr;</span>
-        </div>
-      </a>
-
-      <a href="/vow/" class="app-card">
-        <div class="app-card-row">
-          <div>
-            <div class="app-name">Vow</div>
-            <div class="app-tagline">Keep your word. Phase-based app blocking, NFC ritual.</div>
-          </div>
-          <span class="arrow">&rarr;</span>
-        </div>
-      </a>
-
-    </div>
-
-    <footer>
-      © 2026 Jan Zellerhoff · Dortmund, Germany
+      </article>
+    </main>
+    <footer class="page-footer">
+      <p><span>For privacy questions, support, or anything else:</span> <a href="mailto:ahoi@sent.com">ahoi@sent.com</a></p>
+      <p>© 2026 Jan Zellerhoff · Dortmund, Germany</p>
     </footer>
   </div>
 </body>
 </html>
+
