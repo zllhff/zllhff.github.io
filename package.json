@@ -1,0 +1,6 @@
+{
+  "name": "zllhff-github-io",
+  "private": true,
+  "type": "module",
+  "description": "Static GitHub Pages site. No build step, no dependencies. type:module lets both the browser (via <script type=module>) and Node's test runner treat assets/js/*.js as ES modules."
+}
