@@ -10,8 +10,8 @@ export function pick(map, lang) {
 
 export const STRINGS = {
   headerName: {
-    de: 'Jan Zellerhoff',
-    en: 'Jan Zellerhoff',
+    de: 'iOS Apps',
+    en: 'iOS Apps',
   },
   headerIntro: {
     de: 'Fünf ruhige iOS-Apps. Privacy-first, für die Dauer gebaut.',
@@ -36,5 +36,13 @@ export const STRINGS = {
   screenshotAlt: {
     de: 'Screenshot',
     en: 'Screenshot',
+  },
+  closeModal: {
+    de: 'Schließen',
+    en: 'Close',
+  },
+  enlargedScreenshotAlt: {
+    de: 'Vergrößerter Screenshot',
+    en: 'Enlarged screenshot',
   },
 };

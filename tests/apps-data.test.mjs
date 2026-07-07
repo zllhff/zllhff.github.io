@@ -32,6 +32,14 @@ test('vow is the only app without a live store URL', () => {
   assert.equal(withoutStore[0].id, 'vow');
 });
 
+test('every app has a theme with bg, surface, text, accent, buttonText, and font', () => {
+  for (const app of APPS) {
+    for (const field of ['bg', 'surface', 'text', 'accent', 'buttonText', 'font']) {
+      assert.ok(app.theme?.[field], `${app.id} missing theme.${field}`);
+    }
+  }
+});
+
 test('no copy field contains an em-dash', () => {
   const emDash = /[—–]/;
   for (const app of APPS) {

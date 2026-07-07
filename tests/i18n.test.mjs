@@ -38,7 +38,8 @@ test('pick returns an empty string when given no map at all', () => {
 test('STRINGS has both de and en for every required UI key', () => {
   const requiredKeys = [
     'headerName', 'headerIntro', 'storeButton', 'comingSoon',
-    'footerContact', 'iconAlt', 'screenshotAlt',
+    'footerContact', 'iconAlt', 'screenshotAlt', 'closeModal',
+    'enlargedScreenshotAlt',
   ];
   for (const key of requiredKeys) {
     assert.ok(STRINGS[key], `missing STRINGS.${key}`);
