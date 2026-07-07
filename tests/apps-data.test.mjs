@@ -39,6 +39,13 @@ test('vow is the only app without a live store URL', () => {
   assert.equal(withoutStore[0].id, 'vow');
 });
 
+test('every app has exactly 3 features per language', () => {
+  for (const app of APPS) {
+    assert.equal(app.features.de.length, 3, `${app.id} de features`);
+    assert.equal(app.features.en.length, 3, `${app.id} en features`);
+  }
+});
+
 test('every app has a theme with bg, surface, text, accent, buttonText, and font', () => {
   for (const app of APPS) {
     for (const field of ['bg', 'surface', 'text', 'accent', 'buttonText', 'font']) {
@@ -53,6 +60,11 @@ test('no copy field contains an em-dash', () => {
     for (const field of ['tagline', 'philosophy', 'benefit']) {
       assert.ok(!emDash.test(app[field].de), `${app.id} ${field}.de has an em/en-dash`);
       assert.ok(!emDash.test(app[field].en), `${app.id} ${field}.en has an em/en-dash`);
+    }
+    for (const lang of ['de', 'en']) {
+      for (const feature of app.features[lang]) {
+        assert.ok(!emDash.test(feature), `${app.id} feature "${feature}" has an em/en-dash`);
+      }
     }
   }
 });

@@ -25,6 +25,18 @@ export const APPS = [
       de: 'Halte deine Gewohnheit durch und entdecke echte Städte und Länder auf einer echten Karte. Einmal kaufen, kein Abo, alles bleibt auf deinem Gerät. Kein Account, kein Druck, kein verlorener Fortschritt.',
       en: "Keep your habit and watch real cities and countries reveal themselves on an actual map. Buy once, no subscription, everything stays on your device. No account, no pressure, no lost progress.",
     },
+    features: {
+      de: [
+        'Gewohnheit als Reise über eine echte Karte',
+        'Fasten-Timer, Gesundheitsziele oder eigenes Versprechen',
+        'Widgets, Live-Aktivität und Apple-Watch-App',
+      ],
+      en: [
+        'Track a habit as a voyage across a real map',
+        'Fasting timer, health goals, or a custom promise',
+        'Widgets, Live Activity, and an Apple Watch app',
+      ],
+    },
     screenshots: {
       de: [
         'assets/screenshots/faro/de/1.jpg',
@@ -67,6 +79,18 @@ export const APPS = [
     benefit: {
       de: 'Roll zeigt dir schwache Aufnahmen, Serienbilder, unscharfe Fotos und Screenshots, damit du sie in Minuten statt Stunden loswirst. Deine Fotos verlassen nie dein Handy.',
       en: "Roll surfaces the weak shots, bursts, blurry frames, and screenshots so you can clear them out in minutes instead of hours. Your photos never leave your phone.",
+    },
+    features: {
+      de: [
+        'Erkennt unscharfe Fotos, Serien und Screenshots',
+        'Behalten oder verwerfen mit einem Tap',
+        'Gruppiert Duplikate und ähnliche Aufnahmen',
+      ],
+      en: [
+        'Flags blurry shots, bursts, and screenshots',
+        'Keep or discard with one tap per photo',
+        'Groups duplicates and similar frames',
+      ],
     },
     screenshots: {
       de: [
@@ -113,6 +137,18 @@ export const APPS = [
       de: 'Scanne, unterschreibe und organisiere Reisepässe, Belege und Verträge in Sekunden. Apple Intelligence benennt jeden Scan automatisch, Kündigungsschreiben kommen fertig formatiert. Einmal kaufen, die ganze Familie kann es nutzen.',
       en: 'Scan, sign, and organize passports, receipts, and contracts in seconds. Apple Intelligence names every scan for you, and cancellation letters come pre-formatted. Buy once, your whole family can use it.',
     },
+    features: {
+      de: [
+        'Dokumente scannen mit automatischer Benennung',
+        'Smart Stacks gruppieren zusammengehörige Dokumente',
+        'Unterschriften und Kündigungsschreiben erzeugen',
+      ],
+      en: [
+        'Scan documents with automatic naming',
+        'Smart Stacks group related documents',
+        'Generate signatures and cancellation letters',
+      ],
+    },
     screenshots: {
       de: [
         'assets/screenshots/kept/de/1.jpg',
@@ -156,6 +192,18 @@ export const APPS = [
       de: 'Erkenne Muster in deinem Alltag und durchbrich die, die dir nicht guttun. Alles bleibt auf deinem Gerät. Keine Accounts, keine Analyse, keine Cloud.',
       en: "Notice the patterns in your days and break the ones that don't serve you. Everything stays on your device. No accounts, no analytics, no cloud.",
     },
+    features: {
+      de: [
+        'Ein täglicher Impuls, per Tap beantwortet',
+        'Optionale tiefere Reflexion bei Bedarf',
+        'Impulse tauchen Wochen später wieder auf',
+      ],
+      en: [
+        'One daily prompt, answered with a tap',
+        'Optional deeper reflection when you want it',
+        'Prompts resurface weeks later to revisit',
+      ],
+    },
     screenshots: {
       de: [
         'assets/screenshots/shin/de/1.jpg',
@@ -198,6 +246,18 @@ export const APPS = [
     benefit: {
       de: 'Wähle eine Phase, löse sie per Ritual aus, und lass Benachrichtigungen geräteübergreifend verstummen. Keine Gamification, keine Streaks zu pflegen, nur ein Wort, das du dir selbst hältst.',
       en: 'Choose a phase, trigger it by ritual, and let notifications go quiet across your devices. No gamification, no streaks to maintain, just a word you keep with yourself.',
+    },
+    features: {
+      de: [
+        'Phasen-Blocking: Deep Work, Familie, Schlaf',
+        'Session per NFC-Tap starten oder beenden',
+        'Einstellbare Strenge, synchron mit Apple Fokus',
+      ],
+      en: [
+        'Phase-based blocking: deep work, family, sleep',
+        'Start or end a session with an NFC tap',
+        'Adjustable strictness, syncs with Apple Focus',
+      ],
     },
     screenshots: {
       de: [

@@ -78,6 +78,14 @@ function buildModalContent(app) {
   benefitEl.className = 'modal-benefit';
   benefitEl.textContent = pick(app.benefit, currentLang);
 
+  const featuresEl = document.createElement('ul');
+  featuresEl.className = 'modal-features';
+  for (const feature of app.features[currentLang] || app.features.en) {
+    const li = document.createElement('li');
+    li.textContent = feature;
+    featuresEl.appendChild(li);
+  }
+
   const shotsWrap = document.createElement('div');
   shotsWrap.className = 'modal-screenshots';
   const screenshots = app.screenshots[currentLang] || app.screenshots.en;
@@ -102,7 +110,7 @@ function buildModalContent(app) {
     cta.textContent = pick(STRINGS.comingSoon, currentLang);
   }
 
-  modal.append(closeButton, header, philosophyEl, benefitEl, shotsWrap, cta);
+  modal.append(closeButton, header, philosophyEl, benefitEl, featuresEl, shotsWrap, cta);
   return modal;
 }
 
