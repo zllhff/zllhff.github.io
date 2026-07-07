@@ -112,3 +112,31 @@ Button-Labels, Footer) liegen als DE/EN-Paar in einem JS-Objekt; Toggle schreibt
 Rein statische Seite ohne Framework — Verifikation über den `preview_start`/Browser-Workflow:
 Grid-Layout Desktop+Mobile, Karten-Expand/Collapse (inkl. „nur eine offen"-Regel), DE/EN-Toggle,
 Store-Links, Screenshot-Strip-Scroll, Dark-Mode, `prefers-reduced-motion`.
+
+---
+
+## Revision 2 (2026-07-07, nach Jan-Feedback)
+
+Die erste Version (oben) wurde nach Nutzer-Feedback iterativ weiterentwickelt. Aktueller
+Stand der ausgelieferten Seite:
+
+- **Interaktion:** Statt Inline-Accordion öffnet ein Klick auf eine Karte ein **Modal-Overlay**
+  (dunkler Scrim, Klick-daneben/×/Escape schliesst). Grund: das Inline-Aufklappen liess das
+  Grid und die Icons springen. Screenshots im Modal öffnen zusätzlich eine **Lightbox**.
+- **Brand pro Kachel:** Jede Karte und ihr Modal tragen die echte Design-Sprache der App
+  (Hintergrund, Akzent, Font) aus einem `theme`-Objekt in `apps-data.js`. Werte aus den
+  Design-Systemen der Apps recherchiert (Faro navy/gold/serif, Roll warmweiss/sienna,
+  Kept salbei/heavy-wordmark, Shin beige/braun/serif, Vow creme/bronze/serif).
+- **Seite nimmt sich zurück:** neutraler Hintergrund, gedämpfter Header, **kein Personenname**
+  (Titel/Header/Footer = „iOS Apps"), Ort aus Footer entfernt. EN ist Standardsprache.
+- **Inhalt pro App:** zusätzlich zu Philosophie/Benefit jetzt **3 sachliche Features**
+  (kompakt, kein Marketing-Sprech, Privacy ausgelassen) und **3 bis 5 Screenshots**
+  (Kept 5 abwechslungsreiche Marketing-Screens statt 3 ähnlicher; Vow inkl. **2 „mode active"**-
+  Simulator-Captures in zwei Welten).
+- **Assets:** Vow-Icon auf das aktuelle Post-Rename-Ring-Motiv korrigiert; alle Icons via
+  `sips -s format png` von Apples CgBI-Format befreit (rendern sonst nicht im Browser).
+- **Nicht angetastet (bewusst):** Alle `<app>/privacy*.html`, `<app>/impressum.html` und die
+  Root-Legal-Dateien — diese URLs sind aus den Apps (ASC Support/Privacy) verlinkt.
+- **Verifikation:** Unit-Tests (`node --test tests/*.test.mjs`) + ein jsdom-Smoke-Test, der die
+  volle Render-/Interaktions-Pipeline (Grid, Modal auf/zu, Lightbox, Sprachumschaltung,
+  5-Screenshot- und 3-Feature-Render) in echtem DOM prüft.
