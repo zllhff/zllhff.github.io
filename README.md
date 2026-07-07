@@ -40,20 +40,33 @@ Jeder App-Hub fühlt sich wie seine eigene Brand-Surface an (eigene Farben, Typo
 
 ## Konvention am Root
 
-`index.html` zeigt eine Liste der aktiven Apps — pro App eine Card:
+`index.html` ist ein Accordion-Grid mit 5 fest hinterlegten Karten: Faro, Roll, Kept, Shin, Vow, in genau dieser Reihenfolge (nicht alphabetisch, sondern Einfüge-Reihenfolge im Datenmodul).
 
-- App-Name (groß)
-- Tagline (eine Zeile)
-- Pfeil → `/app-subdir/`
+Die Karten kommen aus `assets/js/apps-data.js`, exportiert als Array `APPS`. Jeder Eintrag hat die Form:
 
-**Keine direkten Privacy/Impressum-Links am Root.** Die leben auf den Subpages, damit die Per-App-Surface die volle Hoheit über ihre Legal-Doku hat (eigener Brand-Look, eigene Locale-Varianten).
+```js
+{
+  id: 'appname',
+  name: 'AppName',
+  icon: 'assets/icons/appname.png',
+  storeUrl: 'https://apps.apple.com/...' oder null (falls noch nicht live),
+  tagline: { de: '...', en: '...' },
+  philosophy: { de: '...', en: '...' },
+  benefit: { de: '...', en: '...' },
+  screenshots: { de: ['...', '...', '...'], en: ['...', '...', '...'] },
+}
+```
+
+Ein Klick auf eine Karte klappt sie inline auf (Accordion, nur eine Karte gleichzeitig offen) und zeigt Philosophie, Benefit und Screenshots. Die Karte verlinkt zum App-Store-Eintrag über `storeUrl`, nicht zu einer `/<app>/`-Subpage.
+
+Der Footer enthält Kontakt-Mail (`ahoi@sent.com`), Copyright und einen Link zu `/impressum.html`.
 
 ## Workflow: Neue App hinzufügen
 
 1. **Subdir anlegen:** `mkdir <app>/`
 2. **Privacy + Impressum schreiben** (im App-eigenen Brand-Style, mit `ahoi@sent.com` als Contact). Vorlage: `roll/privacy.html` (Roll) oder `shin/privacy.html` (shin).
 3. **`<app>/index.html` schreiben** — Landing-Page nach dem Pattern oben. Vorlage: `roll/index.html` (formal-elegant) oder `shin/index.html` (warm-quiet).
-4. **Im Root `index.html` Card hinzufügen** mit App-Name + Tagline + Link zu `/<app>/`. Alphabetisch einsortieren.
+4. **Neuen Eintrag im `APPS`-Array in `assets/js/apps-data.js` anlegen** mit `id`, `name`, `icon`, `storeUrl` (oder `null`, falls noch nicht live), sowie `tagline`, `philosophy`, `benefit` und `screenshots` jeweils auf Deutsch und Englisch. Reihenfolge im Array bestimmt die Reihenfolge im Grid (nicht alphabetisch).
 5. **Commit + Push** — GitHub Pages baut nach ~30–120 Sek neu.
 6. **Verify:** `curl -I https://zllhff.github.io/<app>/` muss 200 OK zurückgeben.
 
