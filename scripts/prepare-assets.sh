@@ -68,4 +68,4 @@ resize "$SHIN_SRC_EN/6_9_01_hero.png"   "$REPO/assets/screenshots/shin/en/1.jpg"
 resize "$SHIN_SRC_EN/6_9_02_today.png"  "$REPO/assets/screenshots/shin/en/2.jpg"
 resize "$SHIN_SRC_EN/6_9_05_letter.png" "$REPO/assets/screenshots/shin/en/3.jpg"
 
-echo "Done. Vow screenshots are NOT handled by this script (no existing source) — see Task 3 Step 3 of the plan."
+echo "Done. Vow screenshots are NOT handled by this script (no existing source), see Task 3 Step 3 of the plan."
