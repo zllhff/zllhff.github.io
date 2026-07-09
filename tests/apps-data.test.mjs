@@ -2,9 +2,9 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { APPS } from '../assets/js/apps-data.js';
 
-const REQUIRED_IDS = ['faro', 'roll', 'kept', 'shin', 'vow'];
+const REQUIRED_IDS = ['faro', 'roll', 'kept', 'shin', 'vow', 'floe'];
 
-test('APPS contains exactly the 5 expected apps, in order', () => {
+test('APPS contains exactly the 6 expected apps, in order', () => {
   assert.deepEqual(APPS.map((a) => a.id), REQUIRED_IDS);
 });
 
@@ -33,10 +33,9 @@ test('every app has 3 to 5 screenshots per language, matching de/en counts', () 
   }
 });
 
-test('vow is the only app without a live store URL', () => {
-  const withoutStore = APPS.filter((a) => !a.storeUrl);
-  assert.equal(withoutStore.length, 1);
-  assert.equal(withoutStore[0].id, 'vow');
+test('vow and floe are the apps without a live store URL (not yet released)', () => {
+  const withoutStore = APPS.filter((a) => !a.storeUrl).map((a) => a.id);
+  assert.deepEqual(withoutStore, ['vow', 'floe']);
 });
 
 test('every app has exactly 3 features per language', () => {

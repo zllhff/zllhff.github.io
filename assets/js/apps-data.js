@@ -276,4 +276,61 @@ export const APPS = [
       ],
     },
   },
+  {
+    id: 'floe',
+    name: 'floe',
+    icon: 'assets/icons/floe.png',
+    storeUrl: null,
+    theme: {
+      bg: '#0b1620',
+      surface: '#101f2b',
+      text: '#eef6f9',
+      muted: '#9fb2bc',
+      accent: '#5fc7e8',
+      buttonText: '#0b1620',
+      font: "-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
+      fontWeight: '300',
+      letterSpacing: '0.18em',
+    },
+    tagline: {
+      de: 'Sauna und Eisbad, getrackt auf iPhone und Watch. Heiß, dann kalt.',
+      en: 'Sauna and cold plunge, tracked on iPhone and Watch. Heat, then cold.',
+    },
+    philosophy: {
+      de: 'Floe behandelt das älteste Recovery-Ritual mit der Ruhe, die es verdient. Keine Ranglisten, kein Coaching, keine Cloud, die deinen Puls beobachtet. Heiß, dann kalt, getaktet von einer lebendigen Temperatur-Welt, die mit jeder Session glüht und gefriert, und alles bleibt auf deinem Gerät.',
+      en: "Floe treats the oldest recovery ritual with the calm it deserves. No leaderboards, no coaching, no cloud watching your heart rate. Heat, then cold, timed by a living temperature world that warms and freezes with each session, and kept entirely on your device.",
+    },
+    benefit: {
+      de: 'Stoppe Sauna und Eisbad, halte deinen Wochen-Streak und schreibe jede Session als Workout in Health. Tracke die Kälte direkt am Handgelenk mit Live-Puls und Water Lock. Einmal kaufen, für immer deins, kein Konto.',
+      en: "Time your sauna and cold plunge, hold a weekly streak, and write every session to Health as a workout. Track cold straight from your wrist with live heart rate and Water Lock. Buy once, keep it forever, no account.",
+    },
+    features: {
+      de: [
+        'Sauna-Timer mit Runden, Live-Aktivität und Erinnerungen',
+        'Eisbad an der Apple Watch mit Live-Puls',
+        'Wochen-Streaks, Awards und Apple-Health-Sync',
+      ],
+      en: [
+        'Sauna timer with rounds, Live Activity, and reminders',
+        'Cold plunge on Apple Watch with live heart rate',
+        'Weekly streaks, awards, and Apple Health sync',
+      ],
+    },
+    screenshots: {
+      de: [
+        'assets/screenshots/floe/de/1.jpg',
+        'assets/screenshots/floe/de/2.jpg',
+        'assets/screenshots/floe/de/3.jpg',
+        'assets/screenshots/floe/de/4.jpg',
+        'assets/screenshots/floe/de/5.jpg',
+      ],
+      en: [
+        'assets/screenshots/floe/en/1.jpg',
+        'assets/screenshots/floe/en/2.jpg',
+        'assets/screenshots/floe/en/3.jpg',
+        'assets/screenshots/floe/en/4.jpg',
+        'assets/screenshots/floe/en/5.jpg',
+      ],
+    },
+  },
 ];

@@ -14,8 +14,8 @@ export const STRINGS = {
     en: 'iOS Apps',
   },
   headerIntro: {
-    de: 'Fünf ruhige iOS-Apps. Privacy-first, für die Dauer gebaut.',
-    en: 'Five quiet iOS apps. Privacy-first, built to last.',
+    de: 'Sechs ruhige iOS-Apps. Privacy-first, für die Dauer gebaut.',
+    en: 'Six quiet iOS apps. Privacy-first, built to last.',
   },
   storeButton: {
     de: 'Im App Store ansehen',

@@ -12,8 +12,9 @@
 - **GitHub-Remote:** `https://github.com/zllhff/zllhff.github.io.git`
 - **Pages-Source:** `main`-Branch, Root-Verzeichnis (kein Jekyll-Build, plain HTML)
 - **Build-Time nach Push:** typisch 30–90 Sek bis live
-- **Aktive Apps:** [[Roll]], [[shin]] (jeweils eigenes Subdir)
+- **Aktive Apps:** [[Faro]], [[Roll]], [[Kept]], [[shin]], [[Vow]], [[Floe]] (jeweils eigenes Subdir; Root-Index-Kacheln aus `assets/js/apps-data.js`). Vow + Floe noch nicht im Store (`storeUrl: null` → „Coming soon").
 - **Aktive Legal-Pages pro App:** Privacy (+ Locale-Varianten), Impressum
+- **Impressum-Anschrift:** volle ladungsfähige Adresse `Luegstraße 22, 44267 Dortmund` (§ 5 DDG-Pflicht bei kommerziellem App-Vertrieb; Ort allein reicht nicht, Telefon ist nicht Pflicht). Mail überall `ahoi@sent.com`. Geplant: Wechsel auf c/o-Geschäftsadresse (impressumservice.de) — Otto-Task offen.
 
 **Two-Layer-Verknüpfung:**
 
