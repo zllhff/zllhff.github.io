@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Floe — Sauna &amp; Cold Plunge</title>
+  <style>
+    :root {
+      --ice: #5FC7E8;
+      --ember: #FF7A2C;
+      --bg: #0B1620;
+      --fg: #EEF6F9;
+      --muted: #9FB2BC;
+      --border: rgba(255,255,255,0.10);
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", system-ui, sans-serif;
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 40px 24px 64px;
+      background:
+        radial-gradient(120% 80% at 15% 0%, rgba(95,199,232,0.14), transparent 60%),
+        radial-gradient(120% 80% at 85% 100%, rgba(255,122,44,0.16), transparent 60%),
+        var(--bg);
+      color: var(--fg);
+      line-height: 1.55;
+      min-height: 100vh;
+    }
+    .back { font-size: 13px; color: var(--muted); text-decoration: none; display: inline-block; margin-bottom: 40px; }
+    .wordmark {
+      font-size: 40px; font-weight: 300; letter-spacing: 14px; margin: 0 0 12px;
+      background: linear-gradient(90deg, var(--ice), var(--ember));
+      -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
+    }
+    .tag { font-size: 20px; font-weight: 300; font-family: ui-serif, "New York", Georgia, serif; color: var(--fg); margin: 0 0 6px; }
+    .sub { color: var(--muted); font-size: 15px; margin: 0 0 40px; }
+    .links { display: flex; flex-direction: column; gap: 1px; border-radius: 16px; overflow: hidden; border: 1px solid var(--border); }
+    .links a {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 16px 18px; text-decoration: none; color: var(--fg);
+      background: rgba(255,255,255,0.03); font-size: 15px;
+    }
+    .links a:hover { background: rgba(255,255,255,0.06); }
+    .links a span { color: var(--muted); }
+    footer { color: var(--muted); font-size: 13px; margin-top: 40px; }
+    footer a { color: var(--ice); }
+  </style>
+</head>
+<body>
+  <a class="back" href="../index.html">← All apps</a>
+  <h1 class="wordmark">floe</h1>
+  <p class="tag">Heat. Cold. Repeat.</p>
+  <p class="sub">A quiet tracker for the oldest recovery ritual — sauna and cold plunge, on iPhone and Apple Watch. Your sessions stay on your device.</p>
+
+  <nav class="links">
+    <a href="privacy.html">Privacy Policy <span>→</span></a>
+    <a href="terms.html">Terms of Use <span>→</span></a>
+    <a href="impressum.html">Imprint <span>→</span></a>
+  </nav>
+
+  <footer>
+    <p>Questions? <a href="mailto:ahoi@sent.com">ahoi@sent.com</a></p>
+  </footer>
+</body>
+</html>
