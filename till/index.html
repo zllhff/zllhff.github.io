@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Till — Garantien im Blick</title>
+  <style>
+    :root {
+      --mint: #0FA877;
+      --ink: #171B1E;
+      --bg: #F4F6F7;
+      --bg2: #EEF1F2;
+      --muted: #566670;
+      --border: rgba(23,27,30,0.10);
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", system-ui, sans-serif;
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 40px 24px 64px;
+      background:
+        radial-gradient(120% 80% at 15% 0%, rgba(15,168,119,0.10), transparent 60%),
+        linear-gradient(180deg, var(--bg), var(--bg2));
+      color: var(--ink);
+      line-height: 1.55;
+      min-height: 100vh;
+    }
+    .back { font-size: 13px; color: var(--muted); text-decoration: none; display: inline-block; margin-bottom: 40px; }
+    .wordmark { font-size: 40px; font-weight: 600; letter-spacing: -1px; margin: 0 0 12px; color: var(--ink); }
+    .tag { font-size: 20px; font-weight: 500; color: var(--mint); margin: 0 0 6px; }
+    .sub { color: var(--muted); font-size: 15px; margin: 0 0 40px; }
+    .links { display: flex; flex-direction: column; gap: 1px; border-radius: 16px; overflow: hidden; border: 1px solid var(--border); }
+    .links a {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 16px 18px; text-decoration: none; color: var(--ink);
+      background: rgba(255,255,255,0.55); font-size: 15px;
+    }
+    .links a:hover { background: rgba(255,255,255,0.85); }
+    .links a span { color: var(--muted); }
+    footer { color: var(--muted); font-size: 13px; margin-top: 40px; }
+    footer a { color: var(--mint); }
+  </style>
+</head>
+<body>
+  <a class="back" href="../index.html">← Alle Apps</a>
+  <h1 class="wordmark">Till</h1>
+  <p class="tag">Jede Garantie im Blick.</p>
+  <p class="sub">Beleg scannen, Frist läuft. Till verfolgt Gewährleistung und Herstellergarantie
+  für dich — deine Belege verlassen nie dein Gerät. Kein Konto, keine Cloud.</p>
+
+  <nav class="links">
+    <a href="privacy.html">Datenschutz <span>→</span></a>
+    <a href="terms.html">Nutzungsbedingungen <span>→</span></a>
+    <a href="impressum.html">Impressum <span>→</span></a>
+    <a href="support.html">Support <span>→</span></a>
+  </nav>
+
+  <footer>
+    <p>Fragen? <a href="mailto:ahoi@sent.com">ahoi@sent.com</a></p>
+    <p>Icons: <a href="https://icon-sets.iconify.design/solar/">Solar Icon Set</a> by 480 Design, lizenziert unter <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</p>
+  </footer>
+</body>
+</html>
