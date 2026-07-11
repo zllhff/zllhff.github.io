@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>summa — Privacy Policy</title>
+  <style>
+    :root {
+      --teal: #216687;
+      --bg: #F6F9FB;
+      --fg: #12232B;
+      --muted: #566670;
+      --border: #E1E9ED;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", system-ui, sans-serif;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 32px 24px 64px;
+      background: var(--bg);
+      color: var(--fg);
+      line-height: 1.55;
+    }
+    h1 { font-size: 32px; letter-spacing: -0.3px; margin: 0 0 8px; }
+    h2 { font-size: 22px; margin: 32px 0 8px; letter-spacing: -0.1px; }
+    h3 { font-size: 17px; margin: 20px 0 6px; }
+    p, li { font-size: 16px; color: var(--fg); }
+    a { color: var(--teal); }
+    .meta { color: var(--muted); font-size: 14px; margin-bottom: 32px; }
+    .pill {
+      display: inline-block; padding: 4px 10px; border-radius: 999px;
+      background: rgba(33,102,135,0.10); color: var(--teal);
+      font-size: 13px; font-weight: 500; margin-bottom: 16px;
+    }
+    .back { font-size: 13px; color: var(--muted); text-decoration: none; display: inline-block; margin-bottom: 20px; }
+    ul { padding-left: 20px; }
+    li { margin-bottom: 6px; }
+  </style>
+</head>
+<body>
+  <a class="back" href="../index.html">← All apps</a>
+  <span class="pill">summa · Privacy</span>
+  <h1>Privacy Policy</h1>
+  <p class="meta">Last updated: 2026-07-11 · Effective immediately.</p>
+
+  <p><strong>Your bank statements never leave your device.</strong> summa reads every PDF statement
+  entirely on your iPhone to produce a spreadsheet. It has no account, no login, and no server that
+  stores your documents. The only network activity is processing your purchase.</p>
+
+  <h2>What stays on your device</h2>
+  <ul>
+    <li>Every statement you import, and the transactions, balances and categories extracted from it.</li>
+    <li>Your saved statement library and settings.</li>
+    <li>All of it lives in Apple's on-device database and is removed when you delete the app.</li>
+  </ul>
+
+  <h2>Parsing</h2>
+  <p>Statements are parsed on-device using Apple's frameworks (PDFKit, Vision, and — on capable
+  devices — Apple's on-device Foundation Models). Nothing about your statement content is sent to
+  us or to any third party.</p>
+
+  <h2>Export</h2>
+  <p>Excel and CSV exports are generated locally on your device and handed to a destination you
+  choose through Apple's share sheet — summa itself sends nothing to a server.</p>
+
+  <h2>Purchases</h2>
+  <p>summa offers a one-time Lifetime purchase and an auto-renewable yearly subscription. Billing is
+  handled by Apple's <strong>StoreKit</strong> — we never see your name, email, or payment details.
+  To manage the entitlement across your devices, summa uses <strong>RevenueCat</strong> as purchase
+  infrastructure. RevenueCat receives a randomly generated, anonymous app-user ID and your purchase
+  status, but not your identity and not your statement data. See
+  <a href="https://www.revenuecat.com/privacy/">RevenueCat's privacy policy</a>. RevenueCat is the
+  only third party summa uses.</p>
+
+  <h2>Data we collect about you</h2>
+  <p><strong>None that identifies you.</strong> summa contains no analytics SDK, no crash-reporting
+  SDK, no advertising identifiers, and no user accounts. The only data that leaves your device is
+  the anonymous purchase data described above.</p>
+
+  <h2>Children</h2>
+  <p>summa is not directed at children and does not knowingly collect data from them.</p>
+
+  <h2>Region-specific notes</h2>
+  <h3>EU (GDPR)</h3>
+  <p>Your statement data is processed solely on your device under your control (access, deletion and
+  portability are yours by design). The limited purchase data processed by RevenueCat and Apple
+  serves only to process and manage your purchase. You may contact us at any time to exercise your
+  rights.</p>
+  <h3>California (CCPA/CPRA)</h3>
+  <p>summa does not sell or share personal information.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If what summa collects or transmits ever changes, this policy will be updated with a new date
+  above, and a notice will appear in the app before the change takes effect.</p>
+
+  <h2>Contact</h2>
+  <p>Privacy questions: <a href="mailto:ahoi@sent.com">ahoi@sent.com</a></p>
+</body>
+</html>

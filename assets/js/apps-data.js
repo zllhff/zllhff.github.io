@@ -333,4 +333,46 @@ export const APPS = [
       ],
     },
   },
+  {
+    id: 'summa',
+    name: 'summa',
+    icon: 'assets/icons/summa.png',
+    storeUrl: null,
+    theme: {
+      bg: '#F4F7F9',
+      surface: '#FFFFFF',
+      text: '#12232B',
+      muted: '#566670',
+      accent: '#216687',
+      buttonText: '#FFFFFF',
+      font: "-apple-system, BlinkMacSystemFont, 'SF Pro Display', system-ui, sans-serif",
+      fontWeight: '600',
+      letterSpacing: '-0.02em',
+    },
+    tagline: {
+      de: 'PDF-Kontoauszug rein, saubere Excel- oder CSV-Datei raus. Auf deinem iPhone.',
+      en: 'Bank statement PDF in, clean Excel or CSV out. On your iPhone.',
+    },
+    philosophy: {
+      de: 'summa verwandelt Kontoauszüge in strukturierte Tabellen — ohne Bank-Login, ohne Cloud, ohne dass deine Auszüge je das Gerät verlassen. Jede Zeile wird gegen den Saldo geprüft; nichts wird als sauber gezeigt, was nicht aufgeht.',
+      en: "summa turns bank statements into structured spreadsheets — no bank login, no cloud, and your statements never leave the device. Every row is checked against the balance; nothing is shown as clean unless it reconciles.",
+    },
+    benefit: {
+      de: 'Importiere einen PDF-Auszug, prüfe die abgeglichenen Zeilen und exportiere als Excel oder CSV — für Steuer, Buchhaltung und Nebenkosten. Alles bleibt auf deinem Gerät.',
+      en: 'Import a PDF statement, review the reconciled rows, and export to Excel or CSV — for taxes, bookkeeping and expenses. Everything stays on your device.',
+    },
+    features: {
+      de: [
+        'PDF-Kontoauszug → Excel (.xlsx) oder CSV, on-device',
+        'Bilanz-Abgleich markiert Zeilen, die nicht aufgehen',
+        'CSV für Excel-DE, US und QuickBooks',
+      ],
+      en: [
+        'Bank statement PDF → Excel (.xlsx) or CSV, on-device',
+        'Balance check flags rows that do not add up',
+        'CSV for Excel-DE, US and QuickBooks',
+      ],
+    },
+    screenshots: { de: [], en: [] },
+  },
 ];
