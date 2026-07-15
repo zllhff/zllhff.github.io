@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Marker — Support</title>
+  <style>
+    :root {
+      --teal: #2b6f6a;
+      --bg: #F6F9F8;
+      --fg: #14181D;
+      --muted: #566670;
+      --border: #E1E9E7;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", system-ui, sans-serif;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 32px 24px 64px;
+      background: var(--bg);
+      color: var(--fg);
+      line-height: 1.55;
+    }
+    h1 { font-size: 32px; letter-spacing: -0.3px; margin: 0 0 8px; }
+    h2 { font-size: 22px; margin: 32px 0 8px; letter-spacing: -0.1px; }
+    p, li { font-size: 16px; color: var(--fg); }
+    a { color: var(--teal); }
+    .meta { color: var(--muted); font-size: 14px; margin-bottom: 32px; }
+    .pill {
+      display: inline-block; padding: 4px 10px; border-radius: 999px;
+      background: rgba(43,111,106,0.10); color: var(--teal);
+      font-size: 13px; font-weight: 500; margin-bottom: 16px;
+    }
+    .back { font-size: 13px; color: var(--muted); text-decoration: none; display: inline-block; margin-bottom: 20px; }
+    .faq { margin-top: 8px; }
+    .faq dt { font-weight: 600; margin-top: 18px; }
+    .faq dd { margin: 4px 0 0; color: var(--muted); }
+    .disclaimer { border-left: 3px solid var(--teal); padding-left: 16px; color: var(--muted); font-size: 15px; margin-top: 32px; }
+  </style>
+</head>
+<body>
+  <a class="back" href="../index.html">← All apps</a>
+  <span class="pill">Marker · Support</span>
+  <h1>Support</h1>
+  <p class="meta">Questions, problems, feedback — we're glad to help.</p>
+
+  <p>Email us directly: <a href="mailto:ahoi@sent.com">ahoi@sent.com</a>. We usually reply within
+  2 business days.</p>
+
+  <h2>Frequently asked</h2>
+  <dl class="faq">
+    <dt>Where are my lab values stored?</dt>
+    <dd>Only on your iPhone. Marker has no account and no cloud — delete the app and the data is
+    gone. Keep a device backup if you want to preserve your history.</dd>
+
+    <dt>Do my lab reports leave my phone?</dt>
+    <dd>No. Every report is read on-device and never uploaded. Marker has no server that stores
+    your documents.</dd>
+
+    <dt>How do I import a report?</dt>
+    <dd>Four ways: open a PDF, use the iOS share sheet from another app, snap a photo of the
+    printout with your camera, or type values in by hand. Marker reads it all on-device.</dd>
+
+    <dt>Why does Marker ask me to review before saving?</dt>
+    <dd>Marker reads reports automatically and can make mistakes, so it shows you the extracted
+    values and lets you correct them before anything is saved. It cross-checks each value against
+    the reference range printed on that same report and flags anything it could not read
+    confidently.</dd>
+
+    <dt>Where do the reference ranges come from?</dt>
+    <dd>From your own report. Marker only shows a value against the range printed on the same
+    report and never invents or defines its own ranges. That is why a report without a printed
+    range is shown without a range rather than guessed.</dd>
+
+    <dt>How do I unlock Marker Pro, and can I restore it?</dt>
+    <dd>The free tier saves one report per calendar month. Marker Pro unlocks unlimited reports as a
+    one-time Lifetime purchase or a yearly subscription with a 3-day free trial. Restore Purchases
+    is at the bottom of Settings and re-grants Pro on a fresh install.</dd>
+  </dl>
+
+  <p class="disclaimer">Marker is for informational use only and is not a medical device. It does
+  not provide a diagnosis, medical advice, or treatment recommendations. Always talk to a qualified
+  healthcare professional about your results.</p>
+</body>
+</html>

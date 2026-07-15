@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Marker — On-device Lab Value Tracker</title>
+  <style>
+    :root {
+      --teal: #2b6f6a;
+      --ink: #14181D;
+      --bg: #F4F7F6;
+      --bg2: #EDF2F1;
+      --muted: #566670;
+      --border: rgba(20,24,29,0.10);
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", system-ui, sans-serif;
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 40px 24px 64px;
+      background:
+        radial-gradient(120% 80% at 15% 0%, rgba(43,111,106,0.10), transparent 60%),
+        linear-gradient(180deg, var(--bg), var(--bg2));
+      color: var(--ink);
+      line-height: 1.55;
+      min-height: 100vh;
+    }
+    .back { font-size: 13px; color: var(--muted); text-decoration: none; display: inline-block; margin-bottom: 40px; }
+    .wordmark { font-size: 40px; font-weight: 600; letter-spacing: -1px; margin: 0 0 12px; color: var(--ink); }
+    .tag { font-size: 20px; font-weight: 500; color: var(--teal); margin: 0 0 6px; }
+    .sub { color: var(--muted); font-size: 15px; margin: 0 0 28px; }
+    .features { list-style: none; padding: 0; margin: 0 0 32px; display: flex; flex-direction: column; gap: 8px; }
+    .features li { font-size: 15px; padding-left: 22px; position: relative; }
+    .features li::before { content: "→"; position: absolute; left: 0; color: var(--teal); }
+    .note {
+      font-size: 13px; color: var(--muted); background: rgba(43,111,106,0.06);
+      border: 1px solid var(--border); border-radius: 12px; padding: 14px 16px; margin: 0 0 32px;
+    }
+    .links { display: flex; flex-direction: column; gap: 1px; border-radius: 16px; overflow: hidden; border: 1px solid var(--border); }
+    .links a {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 16px 18px; text-decoration: none; color: var(--ink);
+      background: rgba(255,255,255,0.55); font-size: 15px;
+    }
+    .links a:hover { background: rgba(255,255,255,0.85); }
+    .links a span { color: var(--muted); }
+    footer { color: var(--muted); font-size: 13px; margin-top: 40px; }
+    footer a { color: var(--teal); }
+  </style>
+</head>
+<body>
+  <a class="back" href="../index.html">← All apps</a>
+  <h1 class="wordmark">Marker</h1>
+  <p class="tag">Your lab results, tracked on your iPhone.</p>
+  <p class="sub">Import a lab report and Marker lays every value next to the reference range
+  printed on that same report, then keeps a tidy history over time. Everything is read on your
+  iPhone; your lab values never leave your device. No account, no cloud, no sign-in.</p>
+
+  <ul class="features">
+    <li>Four ways to import: PDF, the iOS share sheet, your camera, or manual entry.</li>
+    <li>A clear history and trend for each marker over time.</li>
+    <li>A safe, checked read: values shown only against the range on your own report.</li>
+  </ul>
+
+  <p class="note">Marker is for informational use only and is not a medical device. It does not
+  provide a diagnosis, medical advice, or treatment recommendations. Always talk to a qualified
+  healthcare professional about your results.</p>
+
+  <nav class="links">
+    <a href="privacy.html">Privacy Policy <span>→</span></a>
+    <a href="terms.html">Terms of Use <span>→</span></a>
+    <a href="impressum.html">Impressum <span>→</span></a>
+    <a href="support.html">Support <span>→</span></a>
+  </nav>
+
+  <footer>
+    <p>Questions? <a href="mailto:ahoi@sent.com">ahoi@sent.com</a></p>
+    <p>© 2026 Jan Zellerhoff · Dortmund, Germany · <a href="impressum.html">Impressum</a></p>
+    <p>Icons: <a href="https://icon-sets.iconify.design/solar/">Solar Icon Set</a> by 480 Design, licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</p>
+  </footer>
+</body>
+</html>
